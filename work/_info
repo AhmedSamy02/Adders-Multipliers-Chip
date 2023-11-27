@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/20112/Desktop/3rd/Labs/ArchProject
+vadder_32bit
+!s110 1701066737
+!i10b 1
+!s100 nAMb5TW1oi:[gIO::0DGj1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IzCBnUf4Q[[V^O9M_lB9@40
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/20112/Desktop/Engineering/VLSI Project
+w1701066733
+Z3 8C:/Users/20112/Desktop/Engineering/VLSI Project/normal_adder.v
+Z4 FC:/Users/20112/Desktop/Engineering/VLSI Project/normal_adder.v
+!i122 17
+Z5 L0 1 9
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1701066737.000000
+!s107 C:/Users/20112/Desktop/Engineering/VLSI Project/normal_adder.v|
+Z7 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/20112/Desktop/Engineering/VLSI Project/normal_adder.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vFullAdder
+Z10 !s110 1701066771
+!i10b 1
+!s100 ZM:<NZ0O7RWFJP1WHjd741
+R0
+InAF_TABhoC_lb9oXjHeF72
+R1
+R2
+w1701062409
+8C:/Users/20112/Desktop/Engineering/VLSI Project/full_adder.v
+FC:/Users/20112/Desktop/Engineering/VLSI Project/full_adder.v
+!i122 19
+L0 1 10
+R6
+r1
+!s85 0
+31
+Z11 !s108 1701066771.000000
+!s107 C:/Users/20112/Desktop/Engineering/VLSI Project/full_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/20112/Desktop/Engineering/VLSI Project/full_adder.v|
+!i113 1
+R8
+R9
+n@full@adder
+vNormalAdder
+R10
+!i10b 1
+!s100 gZ:6Vj3a9<JlMb6<nTaA52
+R0
+IHWYfN=5job14K`JzTL>3I2
+R1
+R2
+w1701066760
+R3
+R4
+!i122 20
+R5
+R6
+r1
+!s85 0
+31
+R11
+Z12 !s107 C:/Users/20112/Desktop/Engineering/VLSI Project/normal_adder.v|
+R7
+!i113 1
+R8
+R9
+n@normal@adder
+vRippleAdder
+R10
+!i10b 1
+!s100 9VZEgK_Rn`gijUhk4RQOA1
+R0
+Ihc^9cPl2Vm^cAJRj?`6]h1
+R1
+R2
+w1701066564
+8C:/Users/20112/Desktop/Engineering/VLSI Project/ripple_adder.v
+FC:/Users/20112/Desktop/Engineering/VLSI Project/ripple_adder.v
+!i122 18
+L0 1 23
+R6
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/20112/Desktop/Engineering/VLSI Project/ripple_adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/20112/Desktop/Engineering/VLSI Project/ripple_adder.v|
+!i113 1
+R8
+R9
+n@ripple@adder
