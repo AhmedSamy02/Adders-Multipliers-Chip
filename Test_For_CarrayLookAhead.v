@@ -5,7 +5,14 @@ reg [31:0]B;
 reg Cin;
 wire Cout; 
 wire [31:0] Sum;
-CarryLookahead32Bit dut(.A(A), .B(B), .Cin(Cin), .Cout(Cout), .Sum(Sum));
+//CarryLookahead32Bit dut(.A(A), .B(B), .Cin(Cin), .Cout(Cout), .Sum(Sum));
+  CarrySelectAdder UUT (
+    .A(A),
+    .B(B),
+    .Cin(Cin),
+    .Cout(Cout),
+    .Sum(Sum)
+  );
 integer success_count;
 initial begin 
 
