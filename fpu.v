@@ -36,7 +36,7 @@ module fpu (
     {carry, Out_Mantissa} = a[22:0] + b[22:0];
     Out_Exponent = a[30:23] + carry;
     if (a[31] == 1'b0 && b[31] == 1'b0) begin
-      for (i = 22; i > -1; i = i - 1) begin
+      repeat(22) begin
         if (Out_Mantissa[22] == 1'b1||Out_Exponent==1'b0) begin
           i = 0;
         end else begin
