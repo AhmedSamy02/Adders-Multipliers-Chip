@@ -3,7 +3,7 @@ module fpa_tb ();
 reg [31:0] A;
 reg [31:0] B;
 wire [31:0] Sum;
-fpa fpa (
+fpu fpu (
     .in1(A),
     .in2(B),
     .out(Sum)
