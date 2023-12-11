@@ -1,4 +1,4 @@
-module SimpleMultiplier (
+module SyncSequentialMultiplier (
     input wire [31:0] in1,
     input wire [31:0] in2,
     input wire clk,
@@ -7,7 +7,7 @@ module SimpleMultiplier (
 );
   wire [31:0] A;
   wire [31:0] B;
-  reg [62:0] product;
+  wire [63:0] product;
   reg sign;
   Register32bit registerIn1 (
       .clk(clk),
@@ -24,9 +24,12 @@ module SimpleMultiplier (
   Register64bit registerOut (
       .clk(clk),
       .rst(rst),
-      .in ({sign, product}),
+      .in (product),
       .out(out)
   );
-  assign product = A[30:0] * B[30:0];
-  assign sign = |product && (A[31] ^ B[31]);
+  SequentialMultiplier seqM (
+      .a(A),
+      .b(B),
+      .result(product)
+  );
 endmodule
