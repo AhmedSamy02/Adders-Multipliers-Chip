@@ -34,17 +34,10 @@ module fpu (
     inShift = b[22:0];
     b[22:0] = outShift;
     {carry, Out_Mantissa} = a[22:0] + b[22:0];
+    if(a[31]!=b[31])
+      carry=0;
     Out_Exponent = a[30:23] + carry;
-    if (a[31] == 1'b0 && b[31] == 1'b0) begin
-      repeat(22) begin
-        if (Out_Mantissa[22] == 1'b1||Out_Exponent==1'b0) begin
-          i = 0;
-        end else begin
-          Out_Mantissa = Out_Mantissa << 1;
-          Out_Exponent = Out_Exponent - 1;
-        end
-      end
-    end
+    
     if ((a[31] == 1'b1 && b[31] == 1'b0) || (a[31] == 1'b0 && b[31] == 1'b1)) begin
       Out_Mantissa = a[22:0] - b[22:0];
       Out_Exponent = a[30:23] - !carry;
@@ -52,6 +45,23 @@ module fpu (
     end
     temp=|Out_Mantissa;
     Out_Sign = temp & a[31];
+
+
+     if (carry == 1) begin
+      Out_Mantissa = Out_Mantissa >> 1;
+      Out_Mantissa[22] = 1;
+    end
+
+  repeat(22) begin
+    if (Out_Mantissa[22] == 1'b1||Out_Exponent==1'b0) begin
+      i = 0;
+    end
+    else begin
+      Out_Mantissa = Out_Mantissa << 1;
+      Out_Exponent = Out_Exponent - 1;
+    end
+  end
+  
     out = {Out_Sign, Out_Exponent, Out_Mantissa};
   end
   BarrelShifter bs (

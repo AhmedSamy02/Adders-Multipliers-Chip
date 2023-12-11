@@ -78,13 +78,13 @@ if (Sum == 32'b00000001011011000000000000000000) begin
 end else begin
   $display("TestCase#7: failed with input A=%0b, B=%0b and Output Sum=%0d ", A, B, Sum);
 end
-A = 32'b00000001110010010000000000000000; B = 32'b00000001011110100000000000000000;  // 9.125 + (-7.625)
+A = 32'b00000001110010010000000000000000; B = 32'b10000001011110100000000000000000;  // 9.125 + (-7.625)
 #10; 
 if (Sum == 32'b00000000011000000000000000000000) begin
   $display("TestCase#8: success");
   success_count = success_count + 1;
 end else begin
-  $display("TestCase#8: failed with input A=%0b, B=%0b and Output Sum=%0d ", A, B, Sum);
+  $display("TestCase#8: failed with input A=%0b, B=%0b and Output Sum=%0b ", A, B, Sum);
 end
 
 end
