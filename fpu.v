@@ -14,12 +14,13 @@ module fpu (
   wire [22:0] outShift;
   reg Out_Sign;
   reg carry;
-  reg flag;
   reg temp;
   always @(*) begin
     a = in1;
     Out_Sign = 0;
     b = in2;
+    carry = 0;
+    temp=0;
     if (in1[30:23] < in2[30:23]) begin
       a = in2;
       b = in1;
