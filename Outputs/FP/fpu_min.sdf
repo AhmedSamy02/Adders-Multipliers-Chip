@@ -1,0 +1,414 @@
+Warning: Design 'fpu' has '115' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : fpu
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 15:59:39 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: in1[30] (input port clocked by vsysclk)
+  Endpoint: out[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in1[30] (in)                             0.00       1.00 r
+  U998/QN (OAI222X1)                       0.32       1.32 f
+  U2147/ZN (INVX0)                         0.26       1.58 r
+  U2274/Q (MUX21X1)                        0.31       1.89 r
+  U2032/QN (NOR2X0)                        0.15       2.05 f
+  out[31] (out)                            0.20       2.25 f
+  data arrival time                                   2.25
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.25
+  -----------------------------------------------------------
+  slack (MET)                                         2.75
+
+
+  Startpoint: in1[31] (input port clocked by vsysclk)
+  Endpoint: out[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in1[31] (in)                             0.00       1.00 r
+  U2273/Q (MUX21X1)                        0.17       1.17 r
+  U2275/Q (XOR2X1)                         0.26       1.43 f
+  U2291/QN (NAND2X1)                       0.16       1.60 r
+  U2004/ZN (INVX0)                         0.08       1.68 f
+  U2293/Q (MUX21X1)                        0.16       1.84 f
+  U1983/ZN (INVX0)                         0.08       1.92 r
+  U1982/QN (NOR2X0)                        0.14       2.06 f
+  out[0] (out)                             0.20       2.26 f
+  data arrival time                                   2.26
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.26
+  -----------------------------------------------------------
+  slack (MET)                                         2.76
+
+
+  Startpoint: in2[0] (input port clocked by vsysclk)
+  Endpoint: out[1] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_sub_25    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[0] (in)                              0.00       1.00 r
+  U1145/Q (MUX21X2)                        0.19       1.19 r
+  sub_43/A[0] (fpu_DW01_sub_25)            0.00       1.19 r
+  sub_43/U205/ZN (INVX0)                   0.09       1.28 f
+  sub_43/U3/QN (NAND2X0)                   0.12       1.39 r
+  sub_43/U9/QN (NAND2X0)                   0.11       1.50 f
+  sub_43/DIFF[0] (fpu_DW01_sub_25)         0.00       1.50 f
+  U2292/Q (MUX21X1)                        0.19       1.69 f
+  U2304/Q (AO222X1)                        0.27       1.96 f
+  U1981/ZN (INVX0)                         0.09       2.05 r
+  U2111/QN (NOR2X0)                        0.14       2.19 f
+  out[1] (out)                             0.20       2.39 f
+  data arrival time                                   2.39
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.39
+  -----------------------------------------------------------
+  slack (MET)                                         2.89
+
+
+  Startpoint: in2[0] (input port clocked by vsysclk)
+  Endpoint: out[2] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_sub_25    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[0] (in)                              0.00       1.00 r
+  U1145/Q (MUX21X2)                        0.19       1.19 r
+  sub_43/A[0] (fpu_DW01_sub_25)            0.00       1.19 r
+  sub_43/U205/ZN (INVX0)                   0.09       1.28 f
+  sub_43/U3/QN (NAND2X0)                   0.12       1.39 r
+  sub_43/U9/QN (NAND2X0)                   0.11       1.50 f
+  sub_43/DIFF[0] (fpu_DW01_sub_25)         0.00       1.50 f
+  U2292/Q (MUX21X1)                        0.19       1.69 f
+  U2306/Q (AO222X1)                        0.24       1.93 f
+  U1980/ZN (INVX0)                         0.08       2.02 r
+  U1979/QN (OAI21X1)                       0.20       2.22 f
+  out[2] (out)                             0.20       2.42 f
+  data arrival time                                   2.42
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.42
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: in2[0] (input port clocked by vsysclk)
+  Endpoint: out[4] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_sub_25    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[0] (in)                              0.00       1.00 r
+  U1145/Q (MUX21X2)                        0.19       1.19 r
+  sub_43/A[0] (fpu_DW01_sub_25)            0.00       1.19 r
+  sub_43/U205/ZN (INVX0)                   0.09       1.28 f
+  sub_43/U3/QN (NAND2X0)                   0.12       1.39 r
+  sub_43/U9/QN (NAND2X0)                   0.11       1.50 f
+  sub_43/DIFF[0] (fpu_DW01_sub_25)         0.00       1.50 f
+  U2292/Q (MUX21X1)                        0.19       1.69 f
+  U2306/Q (AO222X1)                        0.24       1.93 f
+  U2324/Q (AO222X1)                        0.24       2.17 f
+  U2335/Q (AO22X1)                         0.21       2.38 f
+  out[4] (out)                             0.20       2.58 f
+  data arrival time                                   2.58
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.58
+  -----------------------------------------------------------
+  slack (MET)                                         3.08
+
+
+  Startpoint: in2[0] (input port clocked by vsysclk)
+  Endpoint: out[3] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_sub_25    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[0] (in)                              0.00       1.00 r
+  U1145/Q (MUX21X2)                        0.19       1.19 r
+  sub_43/A[0] (fpu_DW01_sub_25)            0.00       1.19 r
+  sub_43/U205/ZN (INVX0)                   0.09       1.28 f
+  sub_43/U3/QN (NAND2X0)                   0.12       1.39 r
+  sub_43/U9/QN (NAND2X0)                   0.11       1.50 f
+  sub_43/DIFF[0] (fpu_DW01_sub_25)         0.00       1.50 f
+  U2292/Q (MUX21X1)                        0.19       1.69 f
+  U2306/Q (AO222X1)                        0.24       1.93 f
+  U2321/Q (AO222X1)                        0.26       2.20 f
+  U1963/ZN (INVX0)                         0.09       2.29 r
+  U1962/QN (NOR2X0)                        0.14       2.42 f
+  out[3] (out)                             0.20       2.62 f
+  data arrival time                                   2.62
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.62
+  -----------------------------------------------------------
+  slack (MET)                                         3.12
+
+
+  Startpoint: in2[6] (input port clocked by vsysclk)
+  Endpoint: out[6] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_add_2     8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[6] (in)                              0.00       1.00 r
+  U1581/Q (MUX21X1)                        0.18       1.18 r
+  add_37/A[6] (fpu_DW01_add_2)             0.00       1.18 r
+  add_37/U209/QN (NAND2X0)                 0.12       1.30 f
+  add_37/U173/QN (NAND2X0)                 0.12       1.42 r
+  add_37/U129/Q (XNOR2X1)                  0.21       1.63 f
+  add_37/SUM[7] (fpu_DW01_add_2)           0.00       1.63 f
+  U2347/Q (MUX21X1)                        0.18       1.81 f
+  U2348/Q (AO222X1)                        0.19       2.00 f
+  U2349/Q (AO222X1)                        0.18       2.18 f
+  U2350/Q (AO222X1)                        0.18       2.36 f
+  U2361/Q (AO22X1)                         0.21       2.57 f
+  out[6] (out)                             0.20       2.77 f
+  data arrival time                                   2.77
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.77
+  -----------------------------------------------------------
+  slack (MET)                                         3.27
+
+
+  Startpoint: in2[0] (input port clocked by vsysclk)
+  Endpoint: out[5] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_sub_25    8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[0] (in)                              0.00       1.00 r
+  U1145/Q (MUX21X2)                        0.19       1.19 r
+  sub_43/A[0] (fpu_DW01_sub_25)            0.00       1.19 r
+  sub_43/U205/ZN (INVX0)                   0.09       1.28 f
+  sub_43/U3/QN (NAND2X0)                   0.12       1.39 r
+  sub_43/U9/QN (NAND2X0)                   0.11       1.50 f
+  sub_43/DIFF[0] (fpu_DW01_sub_25)         0.00       1.50 f
+  U2292/Q (MUX21X1)                        0.19       1.69 f
+  U2306/Q (AO222X1)                        0.24       1.93 f
+  U2324/Q (AO222X1)                        0.24       2.17 f
+  U2346/Q (AO222X1)                        0.26       2.43 f
+  U1956/ZN (INVX0)                         0.09       2.52 r
+  U1955/QN (NOR2X0)                        0.14       2.66 f
+  out[5] (out)                             0.20       2.86 f
+  data arrival time                                   2.86
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.86
+  -----------------------------------------------------------
+  slack (MET)                                         3.36
+
+
+  Startpoint: in2[8] (input port clocked by vsysclk)
+  Endpoint: out[8] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_add_2     8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[8] (in)                              0.00       1.00 r
+  U667/Q (MUX21X2)                         0.19       1.19 r
+  add_37/A[8] (fpu_DW01_add_2)             0.00       1.19 r
+  add_37/U211/QN (NAND2X0)                 0.10       1.29 f
+  add_37/U128/QN (NAND2X0)                 0.11       1.40 r
+  add_37/U250/Q (XOR2X1)                   0.21       1.61 f
+  add_37/SUM[8] (fpu_DW01_add_2)           0.00       1.61 f
+  U2371/Q (MUX21X1)                        0.18       1.79 f
+  U2372/Q (AO222X1)                        0.19       1.98 f
+  U2373/Q (AO222X1)                        0.18       2.16 f
+  U2374/Q (AO222X1)                        0.18       2.34 f
+  U2375/Q (AO222X1)                        0.18       2.52 f
+  U901/Q (AO22X1)                          0.20       2.72 f
+  out[8] (out)                             0.20       2.92 f
+  data arrival time                                   2.92
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.92
+  -----------------------------------------------------------
+  slack (MET)                                         3.42
+
+
+  Startpoint: in2[8] (input port clocked by vsysclk)
+  Endpoint: out[7] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fpu                35000                 saed90nm_typ_ht
+  fpu_DW01_add_2     8000                  saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  in2[8] (in)                              0.00       1.00 r
+  U667/Q (MUX21X2)                         0.19       1.19 r
+  add_37/A[8] (fpu_DW01_add_2)             0.00       1.19 r
+  add_37/U211/QN (NAND2X0)                 0.10       1.29 f
+  add_37/U128/QN (NAND2X0)                 0.11       1.40 r
+  add_37/U250/Q (XOR2X1)                   0.21       1.61 f
+  add_37/SUM[8] (fpu_DW01_add_2)           0.00       1.61 f
+  U2371/Q (MUX21X1)                        0.18       1.79 f
+  U2372/Q (AO222X1)                        0.19       1.98 f
+  U2373/Q (AO222X1)                        0.18       2.16 f
+  U2374/Q (AO222X1)                        0.18       2.34 f
+  U2375/Q (AO222X1)                        0.18       2.52 f
+  U1942/ZN (INVX0)                         0.09       2.61 r
+  U1941/QN (NOR2X0)                        0.14       2.75 f
+  out[7] (out)                             0.20       2.95 f
+  data arrival time                                   2.95
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -2.95
+  -----------------------------------------------------------
+  slack (MET)                                         3.45
+
+
+1

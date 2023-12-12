@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : cell
+Design : CarryBypassAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 13:57:34 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+cb1                       CarryBypassFourBitsAdder_0      240.537602
+                                                                    h
+cb2                       CarryBypassFourBitsAdder_7      240.537602
+                                                                    h
+cb3                       CarryBypassFourBitsAdder_6      240.537602
+                                                                    h
+cb4                       CarryBypassFourBitsAdder_5      240.537602
+                                                                    h
+cb5                       CarryBypassFourBitsAdder_4      240.537602
+                                                                    h
+cb6                       CarryBypassFourBitsAdder_3      240.537602
+                                                                    h
+cb7                       CarryBypassFourBitsAdder_2      240.537602
+                                                                    h
+cb8                       CarryBypassFourBitsAdder_1      240.537602
+                                                                    h
+--------------------------------------------------------------------------------
+Total 8 cells                                             1924.300819
+1

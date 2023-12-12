@@ -1,0 +1,63 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CarrySelectAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 15:25:05 2023
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /mnt/ext/synopsys/syn/U-2022.12-SP7/libraries/syn/gtech.db)
+
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CarrySelectAdder       ForQA             saed90nm_typ_ht
+FullAdder              ForQA             saed90nm_typ_ht
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =   4.7988 uW  (100%)
+                         ---------
+Total Dynamic Power    =   4.7988 uW  (100%)
+
+Cell Leakage Power     =   0.0000 pW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000            4.7988            0.0000            4.7988  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW         4.7988 uW         0.0000 pW         4.7988 uW
+1

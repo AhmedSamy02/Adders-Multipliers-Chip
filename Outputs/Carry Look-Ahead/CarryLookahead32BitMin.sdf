@@ -1,0 +1,364 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : CarryLookahead32Bit
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 15:11:38 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: Cin (input port clocked by vsysclk)
+  Endpoint: Sum[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  Cin (in)                                 0.00       1.00 r
+  FA0/cin (FullAdder)                      0.00       1.00 r
+  FA0/C8/Z (GTECH_XOR2)                    0.01       1.01 f
+  FA0/sum (FullAdder)                      0.00       1.01 f
+  Sum[0] (out)                             0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[31] (input port clocked by vsysclk)
+  Endpoint: Sum[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[31] (in)                               0.00       1.00 r
+  FA31/a (FullAdder)                       0.00       1.00 r
+  FA31/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA31/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA31/sum (FullAdder)                     0.00       1.01 f
+  Sum[31] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[30] (input port clocked by vsysclk)
+  Endpoint: Sum[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[30] (in)                               0.00       1.00 r
+  FA30/a (FullAdder)                       0.00       1.00 r
+  FA30/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA30/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA30/sum (FullAdder)                     0.00       1.01 f
+  Sum[30] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[29] (input port clocked by vsysclk)
+  Endpoint: Sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[29] (in)                               0.00       1.00 r
+  FA29/a (FullAdder)                       0.00       1.00 r
+  FA29/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA29/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA29/sum (FullAdder)                     0.00       1.01 f
+  Sum[29] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[28] (input port clocked by vsysclk)
+  Endpoint: Sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[28] (in)                               0.00       1.00 r
+  FA28/a (FullAdder)                       0.00       1.00 r
+  FA28/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA28/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA28/sum (FullAdder)                     0.00       1.01 f
+  Sum[28] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[27] (input port clocked by vsysclk)
+  Endpoint: Sum[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[27] (in)                               0.00       1.00 r
+  FA27/a (FullAdder)                       0.00       1.00 r
+  FA27/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA27/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA27/sum (FullAdder)                     0.00       1.01 f
+  Sum[27] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[26] (input port clocked by vsysclk)
+  Endpoint: Sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[26] (in)                               0.00       1.00 r
+  FA26/a (FullAdder)                       0.00       1.00 r
+  FA26/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA26/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA26/sum (FullAdder)                     0.00       1.01 f
+  Sum[26] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[25] (input port clocked by vsysclk)
+  Endpoint: Sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[25] (in)                               0.00       1.00 r
+  FA25/a (FullAdder)                       0.00       1.00 r
+  FA25/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA25/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA25/sum (FullAdder)                     0.00       1.01 f
+  Sum[25] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[24] (input port clocked by vsysclk)
+  Endpoint: Sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[24] (in)                               0.00       1.00 r
+  FA24/a (FullAdder)                       0.00       1.00 r
+  FA24/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA24/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA24/sum (FullAdder)                     0.00       1.01 f
+  Sum[24] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+  Startpoint: A[23] (input port clocked by vsysclk)
+  Endpoint: Sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryLookahead32Bit
+                     ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  A[23] (in)                               0.00       1.00 r
+  FA23/a (FullAdder)                       0.00       1.00 r
+  FA23/C9/Z (GTECH_XOR2)                   0.01       1.01 f
+  FA23/C8/Z (GTECH_XOR2)                   0.00       1.01 f
+  FA23/sum (FullAdder)                     0.00       1.01 f
+  Sum[23] (out)                            0.17       1.18 f
+  data arrival time                                   1.18
+
+  clock vsysclk (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.50      -0.50
+  data required time                                 -0.50
+  -----------------------------------------------------------
+  data required time                                 -0.50
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         1.68
+
+
+1
