@@ -17,133 +17,133 @@ module CarrySelectAdder ( A, B, Cin, Sum, Cout );
   wire   [31:0] sumcarry0;
   wire   [31:0] sumcarry1;
 
-  FullAdder_32 \genblk1[0].add0  ( .a(A[0]), .b(B[0]), .cin(1'b0), .sum(
+  FullAdder fa6 ( .a(A[0]), .b(B[0]), .cin(1'b0), .sum(
         sumcarry0[0]), .cout(carryin0[1]) );
-  FullAdder_95 \genblk1[0].add1  ( .a(A[0]), .b(B[0]), .cin(1'b1), .sum(
+  FullAdder fa5 ( .a(A[0]), .b(B[0]), .cin(1'b1), .sum(
         sumcarry1[0]), .cout(carryin1[1]) );
-  FullAdder_94 \genblk1[1].add0  ( .a(A[1]), .b(B[1]), .cin(carryin0[1]), 
+  FullAdder fa4 ( .a(A[1]), .b(B[1]), .cin(carryin0[1]), 
         .sum(sumcarry0[1]), .cout(carryin0[2]) );
-  FullAdder_93 \genblk1[1].add1  ( .a(A[1]), .b(B[1]), .cin(carryin1[1]), 
+  FullAdder fa3( .a(A[1]), .b(B[1]), .cin(carryin1[1]), 
         .sum(sumcarry1[1]), .cout(carryin1[2]) );
-  FullAdder_92 \genblk1[2].add0  ( .a(A[2]), .b(B[2]), .cin(carryin0[2]), 
+  FullAdder fa2 ( .a(A[2]), .b(B[2]), .cin(carryin0[2]), 
         .sum(sumcarry0[2]), .cout(carryin0[3]) );
-  FullAdder_91 \genblk1[2].add1  ( .a(A[2]), .b(B[2]), .cin(carryin1[2]), 
+  FullAdder fa1 ( .a(A[2]), .b(B[2]), .cin(carryin1[2]), 
         .sum(sumcarry1[2]), .cout(carryin1[3]) );
-  FullAdder_90 \genblk1[3].add0  ( .a(A[3]), .b(B[3]), .cin(carryin0[3]), 
+  FullAdder fa0 ( .a(A[3]), .b(B[3]), .cin(carryin0[3]), 
         .sum(sumcarry0[3]), .cout(carryin0[4]) );
-  FullAdder_89 \genblk1[3].add1  ( .a(A[3]), .b(B[3]), .cin(carryin1[3]), 
+  FullAdder fa89   ( .a(A[3]), .b(B[3]), .cin(carryin1[3]), 
         .sum(sumcarry1[3]), .cout(carryin1[4]) );
-  FullAdder_88 \genblk1[4].add0  ( .a(A[4]), .b(B[4]), .cin(carryin0[4]), 
+  FullAdder fa88  ( .a(A[4]), .b(B[4]), .cin(carryin0[4]), 
         .sum(sumcarry0[4]), .cout(carryin0[5]) );
-  FullAdder_87 \genblk1[4].add1  ( .a(A[4]), .b(B[4]), .cin(carryin1[4]), 
+  FullAdder fa87   ( .a(A[4]), .b(B[4]), .cin(carryin1[4]), 
         .sum(sumcarry1[4]), .cout(carryin1[5]) );
-  FullAdder_86 \genblk1[5].add0  ( .a(A[5]), .b(B[5]), .cin(carryin0[5]), 
+  FullAdder fa86  ( .a(A[5]), .b(B[5]), .cin(carryin0[5]), 
         .sum(sumcarry0[5]), .cout(carryin0[6]) );
-  FullAdder_85 \genblk1[5].add1  ( .a(A[5]), .b(B[5]), .cin(carryin1[5]), 
+  FullAdder fa85   ( .a(A[5]), .b(B[5]), .cin(carryin1[5]), 
         .sum(sumcarry1[5]), .cout(carryin1[6]) );
-  FullAdder_84 \genblk1[6].add0  ( .a(A[6]), .b(B[6]), .cin(carryin0[6]), 
+  FullAdder fa84  ( .a(A[6]), .b(B[6]), .cin(carryin0[6]), 
         .sum(sumcarry0[6]), .cout(carryin0[7]) );
-  FullAdder_83 \genblk1[6].add1  ( .a(A[6]), .b(B[6]), .cin(carryin1[6]), 
+  FullAdder fa83   ( .a(A[6]), .b(B[6]), .cin(carryin1[6]), 
         .sum(sumcarry1[6]), .cout(carryin1[7]) );
-  FullAdder_82 \genblk1[7].add0  ( .a(A[7]), .b(B[7]), .cin(carryin0[7]), 
+  FullAdder fa82 ( .a(A[7]), .b(B[7]), .cin(carryin0[7]), 
         .sum(sumcarry0[7]), .cout(carryin0[8]) );
-  FullAdder_81 \genblk1[7].add1  ( .a(A[7]), .b(B[7]), .cin(carryin1[7]), 
+  FullAdder fa81  ( .a(A[7]), .b(B[7]), .cin(carryin1[7]), 
         .sum(sumcarry1[7]), .cout(carryin1[8]) );
-  FullAdder_80 \genblk1[8].add0  ( .a(A[8]), .b(B[8]), .cin(carryin0[8]), 
+  FullAdder fa80 ( .a(A[8]), .b(B[8]), .cin(carryin0[8]), 
         .sum(sumcarry0[8]), .cout(carryin0[9]) );
-  FullAdder_79 \genblk1[8].add1  ( .a(A[8]), .b(B[8]), .cin(carryin1[8]), 
+  FullAdder fa79  ( .a(A[8]), .b(B[8]), .cin(carryin1[8]), 
         .sum(sumcarry1[8]), .cout(carryin1[9]) );
-  FullAdder_78 \genblk1[9].add0  ( .a(A[9]), .b(B[9]), .cin(carryin0[9]), 
+  FullAdder fa78  ( .a(A[9]), .b(B[9]), .cin(carryin0[9]), 
         .sum(sumcarry0[9]), .cout(carryin0[10]) );
-  FullAdder_77 \genblk1[9].add1  ( .a(A[9]), .b(B[9]), .cin(carryin1[9]), 
+  FullAdder fa77   ( .a(A[9]), .b(B[9]), .cin(carryin1[9]), 
         .sum(sumcarry1[9]), .cout(carryin1[10]) );
-  FullAdder_76 \genblk1[10].add0  ( .a(A[10]), .b(B[10]), .cin(carryin0[10]), 
+  FullAdder fa76  ( .a(A[10]), .b(B[10]), .cin(carryin0[10]), 
         .sum(sumcarry0[10]), .cout(carryin0[11]) );
-  FullAdder_75 \genblk1[10].add1  ( .a(A[10]), .b(B[10]), .cin(carryin1[10]), 
+  FullAdder fa75   ( .a(A[10]), .b(B[10]), .cin(carryin1[10]), 
         .sum(sumcarry1[10]), .cout(carryin1[11]) );
-  FullAdder_74 \genblk1[11].add0  ( .a(A[11]), .b(B[11]), .cin(carryin0[11]), 
+  FullAdder fa74  ( .a(A[11]), .b(B[11]), .cin(carryin0[11]), 
         .sum(sumcarry0[11]), .cout(carryin0[12]) );
-  FullAdder_73 \genblk1[11].add1  ( .a(A[11]), .b(B[11]), .cin(carryin1[11]), 
+  FullAdder fa73   ( .a(A[11]), .b(B[11]), .cin(carryin1[11]), 
         .sum(sumcarry1[11]), .cout(carryin1[12]) );
-  FullAdder_72 \genblk1[12].add0  ( .a(A[12]), .b(B[12]), .cin(carryin0[12]), 
+  FullAdder fa72  ( .a(A[12]), .b(B[12]), .cin(carryin0[12]), 
         .sum(sumcarry0[12]), .cout(carryin0[13]) );
-  FullAdder_71 \genblk1[12].add1  ( .a(A[12]), .b(B[12]), .cin(carryin1[12]), 
+  FullAdder fa71   ( .a(A[12]), .b(B[12]), .cin(carryin1[12]), 
         .sum(sumcarry1[12]), .cout(carryin1[13]) );
-  FullAdder_70 \genblk1[13].add0  ( .a(A[13]), .b(B[13]), .cin(carryin0[13]), 
+  FullAdder fa70  ( .a(A[13]), .b(B[13]), .cin(carryin0[13]), 
         .sum(sumcarry0[13]), .cout(carryin0[14]) );
-  FullAdder_69 \genblk1[13].add1  ( .a(A[13]), .b(B[13]), .cin(carryin1[13]), 
+  FullAdder fa69   ( .a(A[13]), .b(B[13]), .cin(carryin1[13]), 
         .sum(sumcarry1[13]), .cout(carryin1[14]) );
-  FullAdder_68 \genblk1[14].add0  ( .a(A[14]), .b(B[14]), .cin(carryin0[14]), 
+  FullAdder fa68  ( .a(A[14]), .b(B[14]), .cin(carryin0[14]), 
         .sum(sumcarry0[14]), .cout(carryin0[15]) );
-  FullAdder_67 \genblk1[14].add1  ( .a(A[14]), .b(B[14]), .cin(carryin1[14]), 
+  FullAdder fa67   ( .a(A[14]), .b(B[14]), .cin(carryin1[14]), 
         .sum(sumcarry1[14]), .cout(carryin1[15]) );
-  FullAdder_66 \genblk1[15].add0  ( .a(A[15]), .b(B[15]), .cin(carryin0[15]), 
+  FullAdder fa66  ( .a(A[15]), .b(B[15]), .cin(carryin0[15]), 
         .sum(sumcarry0[15]), .cout(carryin0[16]) );
-  FullAdder_65 \genblk1[15].add1  ( .a(A[15]), .b(B[15]), .cin(carryin1[15]), 
+  FullAdder fa65   ( .a(A[15]), .b(B[15]), .cin(carryin1[15]), 
         .sum(sumcarry1[15]), .cout(carryin1[16]) );
-  FullAdder_64 \genblk1[16].add0  ( .a(A[16]), .b(B[16]), .cin(carryin0[16]), 
+  FullAdder fa64  ( .a(A[16]), .b(B[16]), .cin(carryin0[16]), 
         .sum(sumcarry0[16]), .cout(carryin0[17]) );
-  FullAdder_63 \genblk1[16].add1  ( .a(A[16]), .b(B[16]), .cin(carryin1[16]), 
+  FullAdder fa63   ( .a(A[16]), .b(B[16]), .cin(carryin1[16]), 
         .sum(sumcarry1[16]), .cout(carryin1[17]) );
-  FullAdder_62 \genblk1[17].add0  ( .a(A[17]), .b(B[17]), .cin(carryin0[17]), 
+  FullAdder fa62  ( .a(A[17]), .b(B[17]), .cin(carryin0[17]), 
         .sum(sumcarry0[17]), .cout(carryin0[18]) );
-  FullAdder_61 \genblk1[17].add1  ( .a(A[17]), .b(B[17]), .cin(carryin1[17]), 
+  FullAdder fa61   ( .a(A[17]), .b(B[17]), .cin(carryin1[17]), 
         .sum(sumcarry1[17]), .cout(carryin1[18]) );
-  FullAdder_60 \genblk1[18].add0  ( .a(A[18]), .b(B[18]), .cin(carryin0[18]), 
+  FullAdder fa60  ( .a(A[18]), .b(B[18]), .cin(carryin0[18]), 
         .sum(sumcarry0[18]), .cout(carryin0[19]) );
-  FullAdder_59 \genblk1[18].add1  ( .a(A[18]), .b(B[18]), .cin(carryin1[18]), 
+  FullAdder fa59   ( .a(A[18]), .b(B[18]), .cin(carryin1[18]), 
         .sum(sumcarry1[18]), .cout(carryin1[19]) );
-  FullAdder_58 \genblk1[19].add0  ( .a(A[19]), .b(B[19]), .cin(carryin0[19]), 
+  FullAdder fa58  ( .a(A[19]), .b(B[19]), .cin(carryin0[19]), 
         .sum(sumcarry0[19]), .cout(carryin0[20]) );
-  FullAdder_57 \genblk1[19].add1  ( .a(A[19]), .b(B[19]), .cin(carryin1[19]), 
+  FullAdder fa57   ( .a(A[19]), .b(B[19]), .cin(carryin1[19]), 
         .sum(sumcarry1[19]), .cout(carryin1[20]) );
-  FullAdder_56 \genblk1[20].add0  ( .a(A[20]), .b(B[20]), .cin(carryin0[20]), 
+  FullAdder fa56  ( .a(A[20]), .b(B[20]), .cin(carryin0[20]), 
         .sum(sumcarry0[20]), .cout(carryin0[21]) );
-  FullAdder_55 \genblk1[20].add1  ( .a(A[20]), .b(B[20]), .cin(carryin1[20]), 
+  FullAdder fa55   ( .a(A[20]), .b(B[20]), .cin(carryin1[20]), 
         .sum(sumcarry1[20]), .cout(carryin1[21]) );
-  FullAdder_54 \genblk1[21].add0  ( .a(A[21]), .b(B[21]), .cin(carryin0[21]), 
+  FullAdder fa54 ( .a(A[21]), .b(B[21]), .cin(carryin0[21]), 
         .sum(sumcarry0[21]), .cout(carryin0[22]) );
-  FullAdder_53 \genblk1[21].add1  ( .a(A[21]), .b(B[21]), .cin(carryin1[21]), 
+  FullAdder fa53  ( .a(A[21]), .b(B[21]), .cin(carryin1[21]), 
         .sum(sumcarry1[21]), .cout(carryin1[22]) );
-  FullAdder_52 \genblk1[22].add0  ( .a(A[22]), .b(B[22]), .cin(carryin0[22]), 
+  FullAdder fa52  ( .a(A[22]), .b(B[22]), .cin(carryin0[22]), 
         .sum(sumcarry0[22]), .cout(carryin0[23]) );
-  FullAdder_51 \genblk1[22].add1  ( .a(A[22]), .b(B[22]), .cin(carryin1[22]), 
+  FullAdder fa51   ( .a(A[22]), .b(B[22]), .cin(carryin1[22]), 
         .sum(sumcarry1[22]), .cout(carryin1[23]) );
-  FullAdder_50 \genblk1[23].add0  ( .a(A[23]), .b(B[23]), .cin(carryin0[23]), 
+  FullAdder fa50  ( .a(A[23]), .b(B[23]), .cin(carryin0[23]), 
         .sum(sumcarry0[23]), .cout(carryin0[24]) );
-  FullAdder_49 \genblk1[23].add1  ( .a(A[23]), .b(B[23]), .cin(carryin1[23]), 
+  FullAdder fa49   ( .a(A[23]), .b(B[23]), .cin(carryin1[23]), 
         .sum(sumcarry1[23]), .cout(carryin1[24]) );
-  FullAdder_48 \genblk1[24].add0  ( .a(A[24]), .b(B[24]), .cin(carryin0[24]), 
+  FullAdder fa48  ( .a(A[24]), .b(B[24]), .cin(carryin0[24]), 
         .sum(sumcarry0[24]), .cout(carryin0[25]) );
-  FullAdder_47 \genblk1[24].add1  ( .a(A[24]), .b(B[24]), .cin(carryin1[24]), 
+  FullAdder fa47   ( .a(A[24]), .b(B[24]), .cin(carryin1[24]), 
         .sum(sumcarry1[24]), .cout(carryin1[25]) );
-  FullAdder_46 \genblk1[25].add0  ( .a(A[25]), .b(B[25]), .cin(carryin0[25]), 
+  FullAdder fa46  ( .a(A[25]), .b(B[25]), .cin(carryin0[25]), 
         .sum(sumcarry0[25]), .cout(carryin0[26]) );
-  FullAdder_45 \genblk1[25].add1  ( .a(A[25]), .b(B[25]), .cin(carryin1[25]), 
+  FullAdder fa45   ( .a(A[25]), .b(B[25]), .cin(carryin1[25]), 
         .sum(sumcarry1[25]), .cout(carryin1[26]) );
-  FullAdder_44 \genblk1[26].add0  ( .a(A[26]), .b(B[26]), .cin(carryin0[26]), 
+  FullAdder fa44  ( .a(A[26]), .b(B[26]), .cin(carryin0[26]), 
         .sum(sumcarry0[26]), .cout(carryin0[27]) );
-  FullAdder_43 \genblk1[26].add1  ( .a(A[26]), .b(B[26]), .cin(carryin1[26]), 
+  FullAdder fa43   ( .a(A[26]), .b(B[26]), .cin(carryin1[26]), 
         .sum(sumcarry1[26]), .cout(carryin1[27]) );
-  FullAdder_42 \genblk1[27].add0  ( .a(A[27]), .b(B[27]), .cin(carryin0[27]), 
+  FullAdder fa42  ( .a(A[27]), .b(B[27]), .cin(carryin0[27]), 
         .sum(sumcarry0[27]), .cout(carryin0[28]) );
-  FullAdder_41 \genblk1[27].add1  ( .a(A[27]), .b(B[27]), .cin(carryin1[27]), 
+  FullAdder fa41   ( .a(A[27]), .b(B[27]), .cin(carryin1[27]), 
         .sum(sumcarry1[27]), .cout(carryin1[28]) );
-  FullAdder_40 \genblk1[28].add0  ( .a(A[28]), .b(B[28]), .cin(carryin0[28]), 
+  FullAdder fa806 ( .a(A[28]), .b(B[28]), .cin(carryin0[28]), 
         .sum(sumcarry0[28]), .cout(carryin0[29]) );
-  FullAdder_39 \genblk1[28].add1  ( .a(A[28]), .b(B[28]), .cin(carryin1[28]), 
+  FullAdder fa00 ( .a(A[28]), .b(B[28]), .cin(carryin1[28]), 
         .sum(sumcarry1[28]), .cout(carryin1[29]) );
-  FullAdder_38 \genblk1[29].add0  ( .a(A[29]), .b(B[29]), .cin(carryin0[29]), 
+  FullAdder fa01 ( .a(A[29]), .b(B[29]), .cin(carryin0[29]), 
         .sum(sumcarry0[29]), .cout(carryin0[30]) );
-  FullAdder_37 \genblk1[29].add1  ( .a(A[29]), .b(B[29]), .cin(carryin1[29]), 
+  FullAdder fa02( .a(A[29]), .b(B[29]), .cin(carryin1[29]), 
         .sum(sumcarry1[29]), .cout(carryin1[30]) );
-  FullAdder_36 \genblk1[30].add0  ( .a(A[30]), .b(B[30]), .cin(carryin0[30]), 
+  FullAdder f03 ( .a(A[30]), .b(B[30]), .cin(carryin0[30]), 
         .sum(sumcarry0[30]), .cout(carryin0[31]) );
-  FullAdder_35 \genblk1[30].add1  ( .a(A[30]), .b(B[30]), .cin(carryin1[30]), 
+  FullAdder fa04 ( .a(A[30]), .b(B[30]), .cin(carryin1[30]), 
         .sum(sumcarry1[30]), .cout(carryin1[31]) );
-  FullAdder_34 \genblk1[31].add0  ( .a(A[31]), .b(B[31]), .cin(carryin0[31]), 
+  FullAdder fa05 ( .a(A[31]), .b(B[31]), .cin(carryin0[31]), 
         .sum(sumcarry0[31]), .cout(carryin0[32]) );
-  FullAdder_33 \genblk1[31].add1  ( .a(A[31]), .b(B[31]), .cin(carryin1[31]), 
+  FullAdder fa06 ( .a(A[31]), .b(B[31]), .cin(carryin1[31]), 
         .sum(sumcarry1[31]), .cout(carryin1[32]) );
   AO22X1 U4 ( .IN1(sumcarry1[9]), .IN2(n2), .IN3(sumcarry0[9]), .IN4(n4), .Q(
         Sum[9]) );
@@ -211,9 +211,9 @@ module CarrySelectAdder ( A, B, Cin, Sum, Cout );
         Sum[0]) );
   AO22X1 U36 ( .IN1(carryin1[32]), .IN2(n3), .IN3(carryin0[32]), .IN4(n5), .Q(
         Cout) );
-  INVX0 U37 ( .INP(Cin), .ZN(n5) );
-  INVX0 U38 ( .INP(Cin), .ZN(n4) );
-  INVX0 U39 ( .INP(n5), .ZN(n3) );
-  INVX0 U40 ( .INP(n4), .ZN(n2) );
+  INVX0 U37 ( .IN1(Cin), .QN(n5) );
+  INVX0 U38 ( .IN1(Cin), .QN(n4) );
+  INVX0 U39 ( .IN1(n5), .QN(n3) );
+  INVX0 U40 ( .IN1(n4), .QN(n2) );
 endmodule
 

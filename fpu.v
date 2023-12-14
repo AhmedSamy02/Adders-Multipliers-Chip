@@ -1,6 +1,7 @@
 module fpu (
     input  wire [31:0] in1,
     input  wire [31:0] in2,
+    output reg  overFlow,
     output reg  [31:0] out
 );
 
@@ -15,6 +16,7 @@ module fpu (
   reg Out_Sign;
   reg carry;
   reg temp;
+
   always @(*) begin
     a = in1;
     Out_Sign = 0;
@@ -37,7 +39,7 @@ module fpu (
     {carry, Out_Mantissa} = a[22:0] + b[22:0];
     if(a[31]!=b[31])
       carry=0;
-    Out_Exponent = a[30:23] + carry;
+    {overFlow,Out_Exponent} = a[30:23] + carry;
     
     if ((a[31] == 1'b1 && b[31] == 1'b0) || (a[31] == 1'b0 && b[31] == 1'b1)) begin
       Out_Mantissa = a[22:0] - b[22:0];
@@ -62,9 +64,13 @@ module fpu (
       Out_Exponent = Out_Exponent - 1;
     end
   end
-  
-    out = {Out_Sign, Out_Exponent, Out_Mantissa};
+    if(overFlow==1)
+      out = 0;
+
+    if (overFlow == 0)
+      out = {Out_Sign, Out_Exponent, Out_Mantissa};
   end
+
   BarrelShifter bs (
       .In(inShift),
       .Out(outShift),
