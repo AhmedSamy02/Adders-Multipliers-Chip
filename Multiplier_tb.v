@@ -30,10 +30,10 @@ module Multiplier_tb ();
     success_count = 0;
     failure_count = 0;
     #20;
-    in1 = 32'b00000000000000000000000000000101;
-    in2 = 32'b10000000000000000000000000000011;
+    in1 = 5;
+    in2 = -3;
     #20;
-    if (out == {1'b1, 63'b1111}) begin
+    if (out == -15) begin
       success_count = success_count + 1;
       $display("TestCase#1: success");
     end else begin
@@ -43,10 +43,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b00000000000000000000000000001000;
-    in2 = 32'b00000000000000000000000000000010;
+    in1 = 8;
+    in2 = 2;
     #20;
-    if (out == 64'b0000000000000000000000000000000000000000000000000000000000010000) begin
+    if (out == 16) begin
       success_count = success_count + 1;
       $display("TestCase#2: success");
     end else begin
@@ -56,10 +56,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b10000000000000000000000000000100;
-    in2 = 32'b10000000000000000000000000000011;
+    in1 = -4;
+    in2 = -3;
     #20;
-    if (out == 64'b0000000000000000000000000000000000000000000000000000000000001100) begin
+    if (out == 12) begin
       success_count = success_count + 1;
       $display("TestCase#3: success");
     end else begin
@@ -69,10 +69,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b10000000000000000000000000000110;
-    in2 = 32'b00000000000000000000000000000111;
+    in1 = -6;
+    in2 = 7;
     #20;
-    if (out == {1'b1, 63'b101010}) begin
+    if (out == -42) begin
       success_count = success_count + 1;
       $display("TestCase#4: success");
     end else begin
@@ -82,10 +82,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b10000000000000000000000000000101;
-    in2 = 32'b00000000000000000000000000000000;
+    in1 = -5;
+    in2 = 0;
     #20;
-    if (out == 64'b0) begin
+    if (out == 0) begin
       success_count = success_count + 1;
       $display("TestCase#5: success");
     end else begin
@@ -108,10 +108,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b00000000000000000000000000001001;
-    in2 = 32'b10000000000000000000000000000010;
+    in1 = 9;
+    in2 = -2;
     #20;
-    if (out == 64'b1000000000000000000000000000000000000000000000000000000000010010) begin
+    if (out == -18) begin
       success_count = success_count + 1;
       $display("TestCase#7: success");
     end else begin
@@ -121,10 +121,10 @@ module Multiplier_tb ();
 
     ////////////////////////////////
 
-    in1 = 32'b10000000000000000000000000000111;
-    in2 = 32'b00000000000000000000000000000100;
+    in1 = -7;
+    in2 = 4;
     #20;
-    if (out == 64'b1000000000000000000000000000000000000000000000000000000000011100) begin
+    if (out == -28) begin
       success_count = success_count + 1;
       $display("TestCase#8: success");
     end else begin

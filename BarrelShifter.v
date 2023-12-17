@@ -8,7 +8,7 @@ module BarrelShifter (
   genvar i;
 
   generate
-    begin : b1
+
       for (i = 0; i < 22; i = i + 1) begin : b2
         MUX2X1 M (
             In[i],
@@ -23,14 +23,12 @@ module BarrelShifter (
           Shift[0],
           a[22]
       );
-    end
   endgenerate
 
   wire [22:0] a1;
   genvar j, k;
 
   generate
-    begin : b3
       for (j = 0; j < 21; j = j + 1) begin : b4
         MUX2X1 M2 (
             a[j],
@@ -47,14 +45,12 @@ module BarrelShifter (
             a1[k]
         );
       end
-    end
   endgenerate
 
   genvar p, q;
   wire [22:0] a2;
 
   generate
-    begin : b6
       for (p = 0; p < 19; p = p + 1) begin : b7
         MUX2X1 M4 (
             a1[p],
@@ -71,14 +67,13 @@ module BarrelShifter (
             a2[k]
         );
       end
-    end
+    
   endgenerate
 
   genvar x, y;
   wire [22:0] a3;
 
   generate
-    begin
       for (x = 0; x < 15; x = x + 1) begin : b9
         MUX2X1 M6 (
             a2[x],
@@ -95,14 +90,12 @@ module BarrelShifter (
             a3[y]
         );
       end
-    end
   endgenerate
 
   genvar s, t;
   wire [22:0] a4;
 
   generate
-    begin : b11
       for (s = 0; s < 7; s = s + 1) begin : b12
         MUX2X1 M8 (
             a3[s],
@@ -119,7 +112,6 @@ module BarrelShifter (
             a4[t]
         );
       end
-    end
   endgenerate
 
   assign Out = a4;
