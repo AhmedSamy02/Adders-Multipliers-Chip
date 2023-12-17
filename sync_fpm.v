@@ -21,10 +21,10 @@ module sync_fpm (
       .out({in2, in1})
   );
   always @(posedge clk) begin
-    additional1 = isZeroA;
+    additional1 = ~isZeroA;
   end
   always @(posedge clk) begin
-    additional2 = isZeroB;
+    additional2 = ~isZeroB;
   end
   fpm FloatingPointMultiplier (
       .in1(in1),
@@ -41,6 +41,6 @@ module sync_fpm (
       .out(product)
   );
   always @(posedge clk) begin
-    isZeroOut = additionalout;
+    isZeroOut = ~additionalout;
   end
 endmodule
