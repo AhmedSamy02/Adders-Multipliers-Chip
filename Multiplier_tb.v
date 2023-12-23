@@ -7,7 +7,7 @@ module Multiplier_tb ();
   wire [63:0] out;
   integer success_count;
   integer failure_count;
-  SimpleMultiplier uut (
+  WallaceTreeMultiplier uut (
       .in1(in1),
       .in2(in2),
       .clk(clk),

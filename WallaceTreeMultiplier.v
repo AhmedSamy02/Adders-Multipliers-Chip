@@ -27,9 +27,9 @@ module WallaceTreeMultiplier (
       .in (product),
       .out(out)
   );
-  wallace_tree WT (
-      .in1(A),
-      .in2(B),
-      .out(product)
+  wallace_multiplier WT (
+      .A(A),
+      .B(B),
+      .OUT(product)
   );
 endmodule
