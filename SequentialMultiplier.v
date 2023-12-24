@@ -17,10 +17,11 @@ module SequentialMultiplier (
     sig = 0;
     temp_a=a;
     if(a[31])begin
-      a=a_comp;
+      temp_a=a_comp;
     end
+    temp_b=b;
     if(b[31]) begin
-      temp_b=b;
+      temp_b=b_comp;
     end
     for (i = 0; i < 31; i = i + 1) begin
       pp[i] = {32{temp_a[i]}} & temp_b;
