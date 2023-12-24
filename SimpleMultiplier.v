@@ -1,13 +1,13 @@
 module SimpleMultiplier (
-    input wire [31:0] in1,
-    input wire [31:0] in2,
+    input wire signed [31:0] in1,
+    input wire signed [31:0] in2,
     input wire clk,
     input wire rst,
-    output wire [63:0] out
+    output wire signed [63:0] out
 );
-  wire [31:0] A;
-  wire [31:0] B;
-  wire  [63:0] product;
+  wire signed [31:0] A;
+  wire signed [31:0] B;
+  reg signed  [63:0] product;
   Register32bit registerIn1 (
       .clk(clk),
       .rst(rst),
@@ -26,5 +26,5 @@ module SimpleMultiplier (
       .in (product),
       .out(out)
   );
-  assign product = A * B;
+  assign product = $signed(A[31:0]) * $signed(B[31:0]);
 endmodule
