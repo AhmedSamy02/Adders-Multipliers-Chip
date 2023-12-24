@@ -7,7 +7,7 @@ module SimpleMultiplier (
 );
   wire [31:0] A;
   wire [31:0] B;
-  reg  [63:0] product;
+  wire  [63:0] product;
   Register32bit registerIn1 (
       .clk(clk),
       .rst(rst),
@@ -26,5 +26,5 @@ module SimpleMultiplier (
       .in (product),
       .out(out)
   );
-  assign product = A[31:0] * B[31:0];
+  assign product = A * B;
 endmodule

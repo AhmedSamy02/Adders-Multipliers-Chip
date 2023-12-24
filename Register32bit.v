@@ -7,9 +7,9 @@ module Register32bit (
 
   always @(posedge clk or posedge rst) begin
     if (rst) begin
-      out <= 32'b0;
+      out = 32'b0;
     end else begin
-      out <= in;
+      out = in;
     end
   end
 
