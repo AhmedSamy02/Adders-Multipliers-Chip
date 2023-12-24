@@ -17,22 +17,22 @@ module SequentialMultiplier (
     sig = 0;
     temp_a=a;
     if(a[31])begin
-      a=a_comp
+      a=a_comp;
     end
     if(b[31]) begin
       temp_b=b;
     end
     for (i = 0; i < 31; i = i + 1) begin
-      pp[i] = {32{a[i]}} & b;
+      pp[i] = {32{temp_a[i]}} & temp_b;
     end
     for (i = 0; i < 31; i = i + 1) begin
       sig = sig + (pp[i] << i);
     end
     if(a[31]^b[31])begin
-      result=0-sig
+      result=0-sig;
     end
     else begin
-      result = sig
+      result = sig;
     end
   end
 
