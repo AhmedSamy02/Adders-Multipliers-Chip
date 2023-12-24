@@ -18,7 +18,7 @@ module fpm_tb ();
 
   initial begin
     clk = 1;
-    forever #5 clk = ~clk;
+    forever #10 clk = ~clk;
   end
 
   initial begin
@@ -34,6 +34,8 @@ module fpm_tb ();
     in1 = 32'b01000001010000100000000000000000;
     in2 = 32'b11000000000100000000000000000000;
     #20;
+    #20;
+    #20;
     if (out == 32'b11000001110110100100000000000000) begin
       success_count = success_count + 1;
       $display("TestCase#1: success");
@@ -46,6 +48,8 @@ module fpm_tb ();
 
     in1 = 32'b01000001010000100000000000000000;
     in2 = 32'b01000001010000100000000000000000;
+    #20;
+    #20;
     #20;
     if (out == 32'b01000011000100110000010000000000) begin
       success_count = success_count + 1;
@@ -60,6 +64,8 @@ module fpm_tb ();
     in1 = 32'b11000001010000100000000000000000;
     in2 = 32'b11000001010000100000000000000000;
     #20;
+    #20;
+    #20;
     if (out == 32'b01000011000100110000010000000000) begin
       success_count = success_count + 1;
       $display("TestCase#3: success");
@@ -72,6 +78,8 @@ module fpm_tb ();
 
     in1 = 32'b11000000101101000000000000000000;
     in2 = 32'b01000010100111010100000000000000;
+    #20;
+    #20;
     #20;
     if (out == 32'b11000011110111010010001000000000) begin
       success_count = success_count + 1;
@@ -86,6 +94,8 @@ module fpm_tb ();
     in1 = 32'b11000000101001000000000000000000;
     in2 = 0;
     #20;
+    #20;
+    #20;
     if (out == 0) begin
       success_count = success_count + 1;
       $display("TestCase#5: success");
@@ -98,6 +108,8 @@ module fpm_tb ();
 
     in1 = 32'b00111111100000000000000000000000;
     in2 = 32'b01000010100111010100000000000000;
+    #20;
+    #20;
     #20;
     if (out == 32'b01000010100111010100000000000000) begin
       success_count = success_count + 1;
@@ -112,6 +124,8 @@ module fpm_tb ();
     in1 = 32'b01000100101111100000010000000000;  //1520.125
     in2 = 32'b11000100110000111000000100000000;  //-1564.03125
     #20;
+    #20;
+    #20;
     if (out == 32'b11001010000100010001110011001100) begin
       success_count = success_count + 1;
       $display("TestCase#7: success");
@@ -124,6 +138,8 @@ module fpm_tb ();
 
     in1 = 32'b10111111100100000000000000000000;
     in2 = 32'b01000001000011000000000000000000;
+    #20;
+    #20;
     #20;
     if (out == 32'b11000001000111011000000000000000) begin
       success_count = success_count + 1;
