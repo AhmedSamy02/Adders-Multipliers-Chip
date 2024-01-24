@@ -1,7 +1,6 @@
 ## <img align= center width=50px height=50px src="https://github.com/AhmedSamy02/Adders-Mania/assets/88517271/dba75e61-02dd-465b-bc31-90907f36c93a"> Table of Contents
 
 - [Overview](#overview)
-- [System Description](#sysdes) 
 - [Output](#out)
 - [Contributors](#contributors)
 
