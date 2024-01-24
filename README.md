@@ -3,6 +3,7 @@
 - [Overview](#overview)
 - [Output](#out)
 - [Contributors](#contributors)
+- [License](#license)
 
 
 ## <img src="https://github.com/AhmedSamy02/Adders-Mania/assets/88517271/9ed3ee67-0407-4c82-9e29-4faa76d1ac44" width="50" height="50" /> Overview <a name = "overview"></a>
@@ -36,3 +37,6 @@
     </td>
   </tr>
  </table>
+
+  ## <img src="https://github.com/YaraHisham61/Architecture_Project/assets/88517271/c4a8b264-bf74-4f14-ba2a-b017ef999151" width="50" height="50" /> License <a name = "license"></a>
+> This software is licensed under MIT License, See [License](https://github.com/AhmedSamy02/Adders-Mania/blob/master/LICENSE)
