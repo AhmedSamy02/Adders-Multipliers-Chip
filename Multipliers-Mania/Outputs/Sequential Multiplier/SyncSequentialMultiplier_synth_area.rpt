@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : SyncSequentialMultiplier
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 12:11:26 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/user55/Documents/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                         5983
+Number of nets:                          8144
+Number of cells:                         3200
+Number of combinational cells:           2718
+Number of sequential cells:               128
+Number of macros/black boxes:               0
+Number of buf/inv:                        269
+Number of references:                       4
+
+Combinational area:               5602.758008
+Buf/Inv area:                      197.105996
+Noncombinational area:             578.815979
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  6181.573987
+Total area:                 undefined
+1

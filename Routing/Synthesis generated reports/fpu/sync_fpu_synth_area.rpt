@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : sync_fpu
+Version: G-2012.06-SP2
+Date   : Fri Dec 29 01:36:13 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/ahesham/Desktop/Proj/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           99
+Number of nets:                           196
+Number of cells:                            4
+Number of combinational cells:              0
+Number of sequential cells:                 1
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       4
+
+Combinational area:       2386.286017
+Buf/Inv area:              373.996002
+Noncombinational area:     515.242016
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          2901.528034
+Total area:                 undefined
+1

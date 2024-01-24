@@ -1,0 +1,12 @@
+clk
+clk_BC
+clk_BC_1
+CTS_clk_CTO_delay11
+CTS_clk_CTO_delay31
+CTS_clk_CTO_delay61
+outRegister/clk
+outRegister/clk_cts_2
+outRegister/clk_cts_1
+outRegister/clk_cts_0
+inputRegister/clk
+inputRegister/clk_cts_0

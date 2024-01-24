@@ -1,0 +1,57 @@
+Warning: Design 'fpu' has '115' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : fpu
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 15:59:38 2023
+****************************************
+
+Resource Sharing Report for design fpu in file ./source/fpu.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r141     | DW01_cmp6    | width=8    |               | eq_28 lt_24          |
+| r199     | DW01_cmp2    | width=23   |               | lt_29                |
+| r201     | DW01_sub     | width=5    |               | sub_34               |
+| r203     | DW01_add     | width=24   |               | add_37               |
+| r205     | DW01_add     | width=8    |               | add_40               |
+| r207     | DW01_sub     | width=22   |               | sub_43               |
+| r209     | DW01_sub     | width=8    |               | sub_44_ni            |
+| r211     | DW01_sub     | width=8    |               | sub_62_aco           |
+| r213     | DW01_sub     | width=8    |               | sub_62_I2_aco        |
+| r215     | DW01_sub     | width=8    |               | sub_62_I3_aco        |
+| r217     | DW01_sub     | width=8    |               | sub_62_I4_aco        |
+| r219     | DW01_sub     | width=8    |               | sub_62_I5_aco        |
+| r221     | DW01_sub     | width=8    |               | sub_62_I6_aco        |
+| r223     | DW01_sub     | width=8    |               | sub_62_I7_aco        |
+| r225     | DW01_sub     | width=8    |               | sub_62_I8_aco        |
+| r227     | DW01_sub     | width=8    |               | sub_62_I9_aco        |
+| r229     | DW01_sub     | width=8    |               | sub_62_I10_aco       |
+| r231     | DW01_sub     | width=8    |               | sub_62_I11_aco       |
+| r233     | DW01_sub     | width=8    |               | sub_62_I12_aco       |
+| r235     | DW01_sub     | width=8    |               | sub_62_I13_aco       |
+| r237     | DW01_sub     | width=8    |               | sub_62_I14_aco       |
+| r239     | DW01_sub     | width=8    |               | sub_62_I15_aco       |
+| r241     | DW01_sub     | width=8    |               | sub_62_I16_aco       |
+| r243     | DW01_sub     | width=8    |               | sub_62_I17_aco       |
+| r245     | DW01_sub     | width=8    |               | sub_62_I18_aco       |
+| r247     | DW01_sub     | width=8    |               | sub_62_I19_aco       |
+| r249     | DW01_sub     | width=8    |               | sub_62_I20_aco       |
+| r251     | DW01_sub     | width=8    |               | sub_62_I21_aco       |
+| r253     | DW01_sub     | width=8    |               | sub_62_I22_aco       |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_43             | DW01_sub         | cla                |                |
+| add_37             | DW01_add         | cla                |                |
+===============================================================================
+
+1

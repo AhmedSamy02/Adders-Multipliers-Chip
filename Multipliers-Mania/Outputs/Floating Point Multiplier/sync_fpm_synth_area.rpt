@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : sync_fpm
+Version: U-2022.12-SP7
+Date   : Sun Dec 24 12:27:23 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/user55/Documents/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                          701
+Number of nets:                          3766
+Number of cells:                         2579
+Number of combinational cells:           2466
+Number of sequential cells:                99
+Number of macros/black boxes:               0
+Number of buf/inv:                        361
+Number of references:                       5
+
+Combinational area:               4531.842014
+Buf/Inv area:                      235.675997
+Noncombinational area:             447.677984
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4979.519998
+Total area:                 undefined
+1

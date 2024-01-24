@@ -1,0 +1,7 @@
+set_user_match   -inverted   $svf_ref/sync_fpm/inputRegister/rst   $svf_impl/sync_fpm/inputRegister/rst
+set_user_match   -inverted   $svf_ref/sync_fpm/outRegister/rst   $svf_impl/sync_fpm/outRegister/rst
+guide_constraints -body { outRegister } -equivalent { outRegister/rst  ~ outRegister/IN0 }
+guide_constraints -body { inputRegister } -equivalent { inputRegister/rst  ~ inputRegister/IN0 }
+
+#-------------------------------------------------------------------
+

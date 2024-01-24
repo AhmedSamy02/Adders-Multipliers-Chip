@@ -1,0 +1,429 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : sync_fpu
+Version: G-2012.06-SP2
+Date   : Fri Dec 29 01:36:14 2017
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: inputRegister/out_reg_63_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_63_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_63_/Q (DFFR_X1)                   0.08       0.08 f
+  inputRegister/out[63] (Register64bit)                   0.00       0.08 f
+  fpua/in2[31] (fpu)                                      0.00       0.08 f
+  fpua/U723/ZN (AOI22_X1)                                 0.04       0.12 r
+  fpua/U675/ZN (NOR3_X1)                                  0.03       0.15 f
+  fpua/out[31] (fpu)                                      0.00       0.15 f
+  outRegister/in[31] (Register32bit)                      0.00       0.15 f
+  outRegister/out_reg_31_/D (DFFR_X1)                     0.01       0.16 f
+  data arrival time                                                  0.16
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_31_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: overFlow_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.08       0.08 f
+  inputRegister/out[62] (Register64bit)                   0.00       0.08 f
+  fpua/in2[30] (fpu)                                      0.00       0.08 f
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 r
+  fpua/U991/ZN (OAI22_X1)                                 0.04       0.15 f
+  fpua/add_42_U1_7/CO (FA_X1)                             0.10       0.25 f
+  fpua/overFlow (fpu)                                     0.00       0.25 f
+  overFlow_reg/D (DFF_X1)                                 0.01       0.26 f
+  data arrival time                                                  0.26
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  overFlow_reg/CK (DFF_X1)                                0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U663/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[24] (fpu)                                      0.00       0.36 f
+  outRegister/in[24] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_24_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_24_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U662/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[25] (fpu)                                      0.00       0.36 f
+  outRegister/in[25] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_25_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_25_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U661/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[26] (fpu)                                      0.00       0.36 f
+  outRegister/in[26] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_26_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_26_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_27_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U634/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[27] (fpu)                                      0.00       0.36 f
+  outRegister/in[27] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_27_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_27_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_28_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U633/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[28] (fpu)                                      0.00       0.36 f
+  outRegister/in[28] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_28_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_28_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U775/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[29] (fpu)                                      0.00       0.36 f
+  outRegister/in[29] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_29_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_29_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U522/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[23] (fpu)                                      0.00       0.36 f
+  outRegister/in[23] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_23_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_23_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: inputRegister/out_reg_62_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outRegister/out_reg_30_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sync_fpu           5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  inputRegister/out_reg_62_/CK (DFFR_X1)                  0.00       0.00 r
+  inputRegister/out_reg_62_/Q (DFFR_X1)                   0.09       0.09 r
+  inputRegister/out[62] (Register64bit)                   0.00       0.09 r
+  fpua/in2[30] (fpu)                                      0.00       0.09 r
+  fpua/U763/ZN (INV_X1)                                   0.03       0.11 f
+  fpua/U991/ZN (OAI22_X1)                                 0.06       0.17 r
+  fpua/add_42_U1_7/CO (FA_X1)                             0.09       0.26 r
+  fpua/U674/ZN (INV_X1)                                   0.05       0.31 f
+  fpua/U933/ZN (AND2_X1)                                  0.05       0.36 f
+  fpua/out[30] (fpu)                                      0.00       0.36 f
+  outRegister/in[30] (Register32bit)                      0.00       0.36 f
+  outRegister/out_reg_30_/D (DFFR_X1)                     0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  outRegister/out_reg_30_/CK (DFFR_X1)                    0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+1

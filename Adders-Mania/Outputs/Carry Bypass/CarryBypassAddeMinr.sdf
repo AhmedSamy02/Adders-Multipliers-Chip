@@ -1,0 +1,411 @@
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'MUX2X1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'RippleAdderFourBits' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : CarryBypassAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 15:03:22 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: cin (input port clocked by vsysclk)
+  Endpoint: sum[0] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  cin (in)                                                0.00       1.00 r
+  cb1/cin (CarryBypassFourBitsAdder)                      0.00       1.00 r
+  cb1/ra/cin (RippleAdderFourBits)                        0.00       1.00 r
+  cb1/ra/fa0/cin (FullAdder)                              0.00       1.00 r
+  cb1/ra/fa0/C8/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb1/ra/fa0/sum (FullAdder)                              0.00       1.01 f
+  cb1/ra/sum[0] (RippleAdderFourBits)                     0.00       1.01 f
+  cb1/sum[0] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[0] (out)                                            0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[31] (input port clocked by vsysclk)
+  Endpoint: sum[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[31] (in)                                              0.00       1.00 r
+  cb8/a[3] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb8/ra/a[3] (RippleAdderFourBits)                       0.00       1.00 r
+  cb8/ra/fa3/a (FullAdder)                                0.00       1.00 r
+  cb8/ra/fa3/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb8/ra/fa3/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb8/ra/fa3/sum (FullAdder)                              0.00       1.01 f
+  cb8/ra/sum[3] (RippleAdderFourBits)                     0.00       1.01 f
+  cb8/sum[3] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[31] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[30] (input port clocked by vsysclk)
+  Endpoint: sum[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[30] (in)                                              0.00       1.00 r
+  cb8/a[2] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb8/ra/a[2] (RippleAdderFourBits)                       0.00       1.00 r
+  cb8/ra/fa2/a (FullAdder)                                0.00       1.00 r
+  cb8/ra/fa2/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb8/ra/fa2/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb8/ra/fa2/sum (FullAdder)                              0.00       1.01 f
+  cb8/ra/sum[2] (RippleAdderFourBits)                     0.00       1.01 f
+  cb8/sum[2] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[30] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[29] (input port clocked by vsysclk)
+  Endpoint: sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[29] (in)                                              0.00       1.00 r
+  cb8/a[1] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb8/ra/a[1] (RippleAdderFourBits)                       0.00       1.00 r
+  cb8/ra/fa1/a (FullAdder)                                0.00       1.00 r
+  cb8/ra/fa1/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb8/ra/fa1/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb8/ra/fa1/sum (FullAdder)                              0.00       1.01 f
+  cb8/ra/sum[1] (RippleAdderFourBits)                     0.00       1.01 f
+  cb8/sum[1] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[29] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[28] (input port clocked by vsysclk)
+  Endpoint: sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[28] (in)                                              0.00       1.00 r
+  cb8/a[0] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb8/ra/a[0] (RippleAdderFourBits)                       0.00       1.00 r
+  cb8/ra/fa0/a (FullAdder)                                0.00       1.00 r
+  cb8/ra/fa0/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb8/ra/fa0/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb8/ra/fa0/sum (FullAdder)                              0.00       1.01 f
+  cb8/ra/sum[0] (RippleAdderFourBits)                     0.00       1.01 f
+  cb8/sum[0] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[28] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[27] (input port clocked by vsysclk)
+  Endpoint: sum[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[27] (in)                                              0.00       1.00 r
+  cb7/a[3] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb7/ra/a[3] (RippleAdderFourBits)                       0.00       1.00 r
+  cb7/ra/fa3/a (FullAdder)                                0.00       1.00 r
+  cb7/ra/fa3/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb7/ra/fa3/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb7/ra/fa3/sum (FullAdder)                              0.00       1.01 f
+  cb7/ra/sum[3] (RippleAdderFourBits)                     0.00       1.01 f
+  cb7/sum[3] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[27] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[26] (input port clocked by vsysclk)
+  Endpoint: sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[26] (in)                                              0.00       1.00 r
+  cb7/a[2] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb7/ra/a[2] (RippleAdderFourBits)                       0.00       1.00 r
+  cb7/ra/fa2/a (FullAdder)                                0.00       1.00 r
+  cb7/ra/fa2/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb7/ra/fa2/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb7/ra/fa2/sum (FullAdder)                              0.00       1.01 f
+  cb7/ra/sum[2] (RippleAdderFourBits)                     0.00       1.01 f
+  cb7/sum[2] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[26] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[25] (input port clocked by vsysclk)
+  Endpoint: sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[25] (in)                                              0.00       1.00 r
+  cb7/a[1] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb7/ra/a[1] (RippleAdderFourBits)                       0.00       1.00 r
+  cb7/ra/fa1/a (FullAdder)                                0.00       1.00 r
+  cb7/ra/fa1/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb7/ra/fa1/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb7/ra/fa1/sum (FullAdder)                              0.00       1.01 f
+  cb7/ra/sum[1] (RippleAdderFourBits)                     0.00       1.01 f
+  cb7/sum[1] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[25] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[24] (input port clocked by vsysclk)
+  Endpoint: sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[24] (in)                                              0.00       1.00 r
+  cb7/a[0] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb7/ra/a[0] (RippleAdderFourBits)                       0.00       1.00 r
+  cb7/ra/fa0/a (FullAdder)                                0.00       1.00 r
+  cb7/ra/fa0/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb7/ra/fa0/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb7/ra/fa0/sum (FullAdder)                              0.00       1.01 f
+  cb7/ra/sum[0] (RippleAdderFourBits)                     0.00       1.01 f
+  cb7/sum[0] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[24] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+  Startpoint: a[23] (input port clocked by vsysclk)
+  Endpoint: sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   ForQA                 saed90nm_typ_ht
+  FullAdder          ForQA                 saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[23] (in)                                              0.00       1.00 r
+  cb6/a[3] (CarryBypassFourBitsAdder)                     0.00       1.00 r
+  cb6/ra/a[3] (RippleAdderFourBits)                       0.00       1.00 r
+  cb6/ra/fa3/a (FullAdder)                                0.00       1.00 r
+  cb6/ra/fa3/C9/Z (GTECH_XOR2)                            0.01       1.01 f
+  cb6/ra/fa3/C8/Z (GTECH_XOR2)                            0.00       1.01 f
+  cb6/ra/fa3/sum (FullAdder)                              0.00       1.01 f
+  cb6/ra/sum[3] (RippleAdderFourBits)                     0.00       1.01 f
+  cb6/sum[3] (CarryBypassFourBitsAdder)                   0.00       1.01 f
+  sum[23] (out)                                           0.17       1.18 f
+  data arrival time                                                  1.18
+
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                  -0.50      -0.50
+  data required time                                                -0.50
+  --------------------------------------------------------------------------
+  data required time                                                -0.50
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.68
+
+
+1

@@ -1,0 +1,1942 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : CarryBypassAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 13:57:34 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: cout (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_2
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_1
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_1
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U2/Q (AO22X1)                                0.16       7.07 f
+  cb7/ra/fa3/cout (FullAdder_101)                         0.00       7.07 f
+  cb7/ra/cout (RippleAdderFourBits_2)                     0.00       7.07 f
+  cb7/m0/in0 (MUX2X1_2)                                   0.00       7.07 f
+  cb7/m0/U2/Q (AO22X1)                                    0.17       7.24 f
+  cb7/m0/out (MUX2X1_2)                                   0.00       7.24 f
+  cb7/cout (CarryBypassFourBitsAdder_2)                   0.00       7.24 f
+  cb8/cin (CarryBypassFourBitsAdder_1)                    0.00       7.24 f
+  cb8/ra/cin (RippleAdderFourBits_1)                      0.00       7.24 f
+  cb8/ra/fa0/cin (FullAdder_100)                          0.00       7.24 f
+  cb8/ra/fa0/U2/Q (AO22X1)                                0.18       7.42 f
+  cb8/ra/fa0/cout (FullAdder_100)                         0.00       7.42 f
+  cb8/ra/fa1/cin (FullAdder_99)                           0.00       7.42 f
+  cb8/ra/fa1/U2/Q (AO22X1)                                0.17       7.60 f
+  cb8/ra/fa1/cout (FullAdder_99)                          0.00       7.60 f
+  cb8/ra/fa2/cin (FullAdder_98)                           0.00       7.60 f
+  cb8/ra/fa2/U2/Q (AO22X1)                                0.17       7.77 f
+  cb8/ra/fa2/cout (FullAdder_98)                          0.00       7.77 f
+  cb8/ra/fa3/cin (FullAdder_97)                           0.00       7.77 f
+  cb8/ra/fa3/U2/Q (AO22X1)                                0.16       7.93 f
+  cb8/ra/fa3/cout (FullAdder_97)                          0.00       7.93 f
+  cb8/ra/cout (RippleAdderFourBits_1)                     0.00       7.93 f
+  cb8/m0/in0 (MUX2X1_1)                                   0.00       7.93 f
+  cb8/m0/U2/Q (AO22X1)                                    0.18       8.11 f
+  cb8/m0/out (MUX2X1_1)                                   0.00       8.11 f
+  cb8/cout (CarryBypassFourBitsAdder_1)                   0.00       8.11 f
+  cout (out)                                              0.22       8.33 f
+  data arrival time                                                  8.33
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -8.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.17
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_2
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_1
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U2/Q (AO22X1)                                0.16       7.07 f
+  cb7/ra/fa3/cout (FullAdder_101)                         0.00       7.07 f
+  cb7/ra/cout (RippleAdderFourBits_2)                     0.00       7.07 f
+  cb7/m0/in0 (MUX2X1_2)                                   0.00       7.07 f
+  cb7/m0/U2/Q (AO22X1)                                    0.17       7.24 f
+  cb7/m0/out (MUX2X1_2)                                   0.00       7.24 f
+  cb7/cout (CarryBypassFourBitsAdder_2)                   0.00       7.24 f
+  cb8/cin (CarryBypassFourBitsAdder_1)                    0.00       7.24 f
+  cb8/ra/cin (RippleAdderFourBits_1)                      0.00       7.24 f
+  cb8/ra/fa0/cin (FullAdder_100)                          0.00       7.24 f
+  cb8/ra/fa0/U2/Q (AO22X1)                                0.18       7.42 f
+  cb8/ra/fa0/cout (FullAdder_100)                         0.00       7.42 f
+  cb8/ra/fa1/cin (FullAdder_99)                           0.00       7.42 f
+  cb8/ra/fa1/U2/Q (AO22X1)                                0.17       7.60 f
+  cb8/ra/fa1/cout (FullAdder_99)                          0.00       7.60 f
+  cb8/ra/fa2/cin (FullAdder_98)                           0.00       7.60 f
+  cb8/ra/fa2/U2/Q (AO22X1)                                0.17       7.77 f
+  cb8/ra/fa2/cout (FullAdder_98)                          0.00       7.77 f
+  cb8/ra/fa3/cin (FullAdder_97)                           0.00       7.77 f
+  cb8/ra/fa3/U1/Q (XOR2X1)                                0.24       8.01 f
+  cb8/ra/fa3/sum (FullAdder_97)                           0.00       8.01 f
+  cb8/ra/sum[3] (RippleAdderFourBits_1)                   0.00       8.01 f
+  cb8/sum[3] (CarryBypassFourBitsAdder_1)                 0.00       8.01 f
+  sum[31] (out)                                           0.22       8.23 f
+  data arrival time                                                  8.23
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -8.23
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.27
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_2
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_1
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U2/Q (AO22X1)                                0.16       7.07 f
+  cb7/ra/fa3/cout (FullAdder_101)                         0.00       7.07 f
+  cb7/ra/cout (RippleAdderFourBits_2)                     0.00       7.07 f
+  cb7/m0/in0 (MUX2X1_2)                                   0.00       7.07 f
+  cb7/m0/U2/Q (AO22X1)                                    0.17       7.24 f
+  cb7/m0/out (MUX2X1_2)                                   0.00       7.24 f
+  cb7/cout (CarryBypassFourBitsAdder_2)                   0.00       7.24 f
+  cb8/cin (CarryBypassFourBitsAdder_1)                    0.00       7.24 f
+  cb8/ra/cin (RippleAdderFourBits_1)                      0.00       7.24 f
+  cb8/ra/fa0/cin (FullAdder_100)                          0.00       7.24 f
+  cb8/ra/fa0/U2/Q (AO22X1)                                0.18       7.42 f
+  cb8/ra/fa0/cout (FullAdder_100)                         0.00       7.42 f
+  cb8/ra/fa1/cin (FullAdder_99)                           0.00       7.42 f
+  cb8/ra/fa1/U2/Q (AO22X1)                                0.17       7.60 f
+  cb8/ra/fa1/cout (FullAdder_99)                          0.00       7.60 f
+  cb8/ra/fa2/cin (FullAdder_98)                           0.00       7.60 f
+  cb8/ra/fa2/U1/Q (XOR2X1)                                0.24       7.84 f
+  cb8/ra/fa2/sum (FullAdder_98)                           0.00       7.84 f
+  cb8/ra/sum[2] (RippleAdderFourBits_1)                   0.00       7.84 f
+  cb8/sum[2] (CarryBypassFourBitsAdder_1)                 0.00       7.84 f
+  sum[30] (out)                                           0.22       8.06 f
+  data arrival time                                                  8.06
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -8.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.44
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_2
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_1
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U2/Q (AO22X1)                                0.16       7.07 f
+  cb7/ra/fa3/cout (FullAdder_101)                         0.00       7.07 f
+  cb7/ra/cout (RippleAdderFourBits_2)                     0.00       7.07 f
+  cb7/m0/in0 (MUX2X1_2)                                   0.00       7.07 f
+  cb7/m0/U2/Q (AO22X1)                                    0.17       7.24 f
+  cb7/m0/out (MUX2X1_2)                                   0.00       7.24 f
+  cb7/cout (CarryBypassFourBitsAdder_2)                   0.00       7.24 f
+  cb8/cin (CarryBypassFourBitsAdder_1)                    0.00       7.24 f
+  cb8/ra/cin (RippleAdderFourBits_1)                      0.00       7.24 f
+  cb8/ra/fa0/cin (FullAdder_100)                          0.00       7.24 f
+  cb8/ra/fa0/U2/Q (AO22X1)                                0.18       7.42 f
+  cb8/ra/fa0/cout (FullAdder_100)                         0.00       7.42 f
+  cb8/ra/fa1/cin (FullAdder_99)                           0.00       7.42 f
+  cb8/ra/fa1/U1/Q (XOR2X1)                                0.24       7.66 f
+  cb8/ra/fa1/sum (FullAdder_99)                           0.00       7.66 f
+  cb8/ra/sum[1] (RippleAdderFourBits_1)                   0.00       7.66 f
+  cb8/sum[1] (CarryBypassFourBitsAdder_1)                 0.00       7.66 f
+  sum[29] (out)                                           0.22       7.88 f
+  data arrival time                                                  7.88
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -7.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.62
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_2
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U2/Q (AO22X1)                                0.16       7.07 f
+  cb7/ra/fa3/cout (FullAdder_101)                         0.00       7.07 f
+  cb7/ra/cout (RippleAdderFourBits_2)                     0.00       7.07 f
+  cb7/m0/in0 (MUX2X1_2)                                   0.00       7.07 f
+  cb7/m0/U2/Q (AO22X1)                                    0.17       7.24 f
+  cb7/m0/out (MUX2X1_2)                                   0.00       7.24 f
+  cb7/cout (CarryBypassFourBitsAdder_2)                   0.00       7.24 f
+  cb8/cin (CarryBypassFourBitsAdder_1)                    0.00       7.24 f
+  cb8/ra/cin (RippleAdderFourBits_1)                      0.00       7.24 f
+  cb8/ra/fa0/cin (FullAdder_100)                          0.00       7.24 f
+  cb8/ra/fa0/U1/Q (XOR2X1)                                0.25       7.49 f
+  cb8/ra/fa0/sum (FullAdder_100)                          0.00       7.49 f
+  cb8/ra/sum[0] (RippleAdderFourBits_1)                   0.00       7.49 f
+  cb8/sum[0] (CarryBypassFourBitsAdder_1)                 0.00       7.49 f
+  sum[28] (out)                                           0.22       7.71 f
+  data arrival time                                                  7.71
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -7.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                       11.79
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U2/Q (AO22X1)                                0.17       6.91 f
+  cb7/ra/fa2/cout (FullAdder_102)                         0.00       6.91 f
+  cb7/ra/fa3/cin (FullAdder_101)                          0.00       6.91 f
+  cb7/ra/fa3/U1/Q (XOR2X1)                                0.24       7.15 f
+  cb7/ra/fa3/sum (FullAdder_101)                          0.00       7.15 f
+  cb7/ra/sum[3] (RippleAdderFourBits_2)                   0.00       7.15 f
+  cb7/sum[3] (CarryBypassFourBitsAdder_2)                 0.00       7.15 f
+  sum[27] (out)                                           0.22       7.37 f
+  data arrival time                                                  7.37
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -7.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.13
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U2/Q (AO22X1)                                0.17       6.74 f
+  cb7/ra/fa1/cout (FullAdder_103)                         0.00       6.74 f
+  cb7/ra/fa2/cin (FullAdder_102)                          0.00       6.74 f
+  cb7/ra/fa2/U1/Q (XOR2X1)                                0.24       6.98 f
+  cb7/ra/fa2/sum (FullAdder_102)                          0.00       6.98 f
+  cb7/ra/sum[2] (RippleAdderFourBits_2)                   0.00       6.98 f
+  cb7/sum[2] (CarryBypassFourBitsAdder_2)                 0.00       6.98 f
+  sum[26] (out)                                           0.22       7.20 f
+  data arrival time                                                  7.20
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -7.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.30
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_2
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U2/Q (AO22X1)                                0.18       6.56 f
+  cb7/ra/fa0/cout (FullAdder_104)                         0.00       6.56 f
+  cb7/ra/fa1/cin (FullAdder_103)                          0.00       6.56 f
+  cb7/ra/fa1/U1/Q (XOR2X1)                                0.24       6.80 f
+  cb7/ra/fa1/sum (FullAdder_103)                          0.00       6.80 f
+  cb7/ra/sum[1] (RippleAdderFourBits_2)                   0.00       6.80 f
+  cb7/sum[1] (CarryBypassFourBitsAdder_2)                 0.00       6.80 f
+  sum[25] (out)                                           0.22       7.02 f
+  data arrival time                                                  7.02
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -7.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.48
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_3
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U2/Q (AO22X1)                                0.16       6.21 f
+  cb6/ra/fa3/cout (FullAdder_105)                         0.00       6.21 f
+  cb6/ra/cout (RippleAdderFourBits_3)                     0.00       6.21 f
+  cb6/m0/in0 (MUX2X1_3)                                   0.00       6.21 f
+  cb6/m0/U2/Q (AO22X1)                                    0.17       6.38 f
+  cb6/m0/out (MUX2X1_3)                                   0.00       6.38 f
+  cb6/cout (CarryBypassFourBitsAdder_3)                   0.00       6.38 f
+  cb7/cin (CarryBypassFourBitsAdder_2)                    0.00       6.38 f
+  cb7/ra/cin (RippleAdderFourBits_2)                      0.00       6.38 f
+  cb7/ra/fa0/cin (FullAdder_104)                          0.00       6.38 f
+  cb7/ra/fa0/U1/Q (XOR2X1)                                0.25       6.63 f
+  cb7/ra/fa0/sum (FullAdder_104)                          0.00       6.63 f
+  cb7/ra/sum[0] (RippleAdderFourBits_2)                   0.00       6.63 f
+  cb7/sum[0] (CarryBypassFourBitsAdder_2)                 0.00       6.63 f
+  sum[24] (out)                                           0.22       6.85 f
+  data arrival time                                                  6.85
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -6.85
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.65
+
+
+  Startpoint: b[0] (input port clocked by vsysclk)
+  Endpoint: sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CarryBypassAdder   8000                  saed90nm_typ_ht
+  FullAdder_96       ForQA                 saed90nm_typ_ht
+  RippleAdderFourBits_0
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_0
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_7
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_7
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_6
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_6
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_5
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_5
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_4
+                     8000                  saed90nm_typ_ht
+  CarryBypassFourBitsAdder_4
+                     8000                  saed90nm_typ_ht
+  RippleAdderFourBits_3
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  b[0] (in)                                               0.00       1.00 r
+  cb1/b[0] (CarryBypassFourBitsAdder_0)                   0.00       1.00 r
+  cb1/ra/b[0] (RippleAdderFourBits_0)                     0.00       1.00 r
+  cb1/ra/fa0/b (FullAdder_96)                             0.00       1.00 r
+  cb1/ra/fa0/U3/Q (XOR2X1)                                0.23       1.23 f
+  cb1/ra/fa0/U2/Q (AO22X1)                                0.18       1.41 f
+  cb1/ra/fa0/cout (FullAdder_96)                          0.00       1.41 f
+  cb1/ra/fa1/cin (FullAdder_127)                          0.00       1.41 f
+  cb1/ra/fa1/U2/Q (AO22X1)                                0.17       1.58 f
+  cb1/ra/fa1/cout (FullAdder_127)                         0.00       1.58 f
+  cb1/ra/fa2/cin (FullAdder_126)                          0.00       1.58 f
+  cb1/ra/fa2/U2/Q (AO22X1)                                0.17       1.75 f
+  cb1/ra/fa2/cout (FullAdder_126)                         0.00       1.75 f
+  cb1/ra/fa3/cin (FullAdder_125)                          0.00       1.75 f
+  cb1/ra/fa3/U2/Q (AO22X1)                                0.16       1.92 f
+  cb1/ra/fa3/cout (FullAdder_125)                         0.00       1.92 f
+  cb1/ra/cout (RippleAdderFourBits_0)                     0.00       1.92 f
+  cb1/m0/in0 (MUX2X1_0)                                   0.00       1.92 f
+  cb1/m0/U2/Q (AO22X1)                                    0.17       2.09 f
+  cb1/m0/out (MUX2X1_0)                                   0.00       2.09 f
+  cb1/cout (CarryBypassFourBitsAdder_0)                   0.00       2.09 f
+  cb2/cin (CarryBypassFourBitsAdder_7)                    0.00       2.09 f
+  cb2/ra/cin (RippleAdderFourBits_7)                      0.00       2.09 f
+  cb2/ra/fa0/cin (FullAdder_124)                          0.00       2.09 f
+  cb2/ra/fa0/U2/Q (AO22X1)                                0.18       2.27 f
+  cb2/ra/fa0/cout (FullAdder_124)                         0.00       2.27 f
+  cb2/ra/fa1/cin (FullAdder_123)                          0.00       2.27 f
+  cb2/ra/fa1/U2/Q (AO22X1)                                0.17       2.44 f
+  cb2/ra/fa1/cout (FullAdder_123)                         0.00       2.44 f
+  cb2/ra/fa2/cin (FullAdder_122)                          0.00       2.44 f
+  cb2/ra/fa2/U2/Q (AO22X1)                                0.17       2.61 f
+  cb2/ra/fa2/cout (FullAdder_122)                         0.00       2.61 f
+  cb2/ra/fa3/cin (FullAdder_121)                          0.00       2.61 f
+  cb2/ra/fa3/U2/Q (AO22X1)                                0.16       2.78 f
+  cb2/ra/fa3/cout (FullAdder_121)                         0.00       2.78 f
+  cb2/ra/cout (RippleAdderFourBits_7)                     0.00       2.78 f
+  cb2/m0/in0 (MUX2X1_7)                                   0.00       2.78 f
+  cb2/m0/U2/Q (AO22X1)                                    0.17       2.95 f
+  cb2/m0/out (MUX2X1_7)                                   0.00       2.95 f
+  cb2/cout (CarryBypassFourBitsAdder_7)                   0.00       2.95 f
+  cb3/cin (CarryBypassFourBitsAdder_6)                    0.00       2.95 f
+  cb3/ra/cin (RippleAdderFourBits_6)                      0.00       2.95 f
+  cb3/ra/fa0/cin (FullAdder_120)                          0.00       2.95 f
+  cb3/ra/fa0/U2/Q (AO22X1)                                0.18       3.13 f
+  cb3/ra/fa0/cout (FullAdder_120)                         0.00       3.13 f
+  cb3/ra/fa1/cin (FullAdder_119)                          0.00       3.13 f
+  cb3/ra/fa1/U2/Q (AO22X1)                                0.17       3.30 f
+  cb3/ra/fa1/cout (FullAdder_119)                         0.00       3.30 f
+  cb3/ra/fa2/cin (FullAdder_118)                          0.00       3.30 f
+  cb3/ra/fa2/U2/Q (AO22X1)                                0.17       3.47 f
+  cb3/ra/fa2/cout (FullAdder_118)                         0.00       3.47 f
+  cb3/ra/fa3/cin (FullAdder_117)                          0.00       3.47 f
+  cb3/ra/fa3/U2/Q (AO22X1)                                0.16       3.64 f
+  cb3/ra/fa3/cout (FullAdder_117)                         0.00       3.64 f
+  cb3/ra/cout (RippleAdderFourBits_6)                     0.00       3.64 f
+  cb3/m0/in0 (MUX2X1_6)                                   0.00       3.64 f
+  cb3/m0/U2/Q (AO22X1)                                    0.17       3.81 f
+  cb3/m0/out (MUX2X1_6)                                   0.00       3.81 f
+  cb3/cout (CarryBypassFourBitsAdder_6)                   0.00       3.81 f
+  cb4/cin (CarryBypassFourBitsAdder_5)                    0.00       3.81 f
+  cb4/ra/cin (RippleAdderFourBits_5)                      0.00       3.81 f
+  cb4/ra/fa0/cin (FullAdder_116)                          0.00       3.81 f
+  cb4/ra/fa0/U2/Q (AO22X1)                                0.18       3.98 f
+  cb4/ra/fa0/cout (FullAdder_116)                         0.00       3.98 f
+  cb4/ra/fa1/cin (FullAdder_115)                          0.00       3.98 f
+  cb4/ra/fa1/U2/Q (AO22X1)                                0.17       4.16 f
+  cb4/ra/fa1/cout (FullAdder_115)                         0.00       4.16 f
+  cb4/ra/fa2/cin (FullAdder_114)                          0.00       4.16 f
+  cb4/ra/fa2/U2/Q (AO22X1)                                0.17       4.33 f
+  cb4/ra/fa2/cout (FullAdder_114)                         0.00       4.33 f
+  cb4/ra/fa3/cin (FullAdder_113)                          0.00       4.33 f
+  cb4/ra/fa3/U2/Q (AO22X1)                                0.16       4.49 f
+  cb4/ra/fa3/cout (FullAdder_113)                         0.00       4.49 f
+  cb4/ra/cout (RippleAdderFourBits_5)                     0.00       4.49 f
+  cb4/m0/in0 (MUX2X1_5)                                   0.00       4.49 f
+  cb4/m0/U2/Q (AO22X1)                                    0.17       4.67 f
+  cb4/m0/out (MUX2X1_5)                                   0.00       4.67 f
+  cb4/cout (CarryBypassFourBitsAdder_5)                   0.00       4.67 f
+  cb5/cin (CarryBypassFourBitsAdder_4)                    0.00       4.67 f
+  cb5/ra/cin (RippleAdderFourBits_4)                      0.00       4.67 f
+  cb5/ra/fa0/cin (FullAdder_112)                          0.00       4.67 f
+  cb5/ra/fa0/U2/Q (AO22X1)                                0.18       4.84 f
+  cb5/ra/fa0/cout (FullAdder_112)                         0.00       4.84 f
+  cb5/ra/fa1/cin (FullAdder_111)                          0.00       4.84 f
+  cb5/ra/fa1/U2/Q (AO22X1)                                0.17       5.02 f
+  cb5/ra/fa1/cout (FullAdder_111)                         0.00       5.02 f
+  cb5/ra/fa2/cin (FullAdder_110)                          0.00       5.02 f
+  cb5/ra/fa2/U2/Q (AO22X1)                                0.17       5.19 f
+  cb5/ra/fa2/cout (FullAdder_110)                         0.00       5.19 f
+  cb5/ra/fa3/cin (FullAdder_109)                          0.00       5.19 f
+  cb5/ra/fa3/U2/Q (AO22X1)                                0.16       5.35 f
+  cb5/ra/fa3/cout (FullAdder_109)                         0.00       5.35 f
+  cb5/ra/cout (RippleAdderFourBits_4)                     0.00       5.35 f
+  cb5/m0/in0 (MUX2X1_4)                                   0.00       5.35 f
+  cb5/m0/U2/Q (AO22X1)                                    0.17       5.53 f
+  cb5/m0/out (MUX2X1_4)                                   0.00       5.53 f
+  cb5/cout (CarryBypassFourBitsAdder_4)                   0.00       5.53 f
+  cb6/cin (CarryBypassFourBitsAdder_3)                    0.00       5.53 f
+  cb6/ra/cin (RippleAdderFourBits_3)                      0.00       5.53 f
+  cb6/ra/fa0/cin (FullAdder_108)                          0.00       5.53 f
+  cb6/ra/fa0/U2/Q (AO22X1)                                0.18       5.70 f
+  cb6/ra/fa0/cout (FullAdder_108)                         0.00       5.70 f
+  cb6/ra/fa1/cin (FullAdder_107)                          0.00       5.70 f
+  cb6/ra/fa1/U2/Q (AO22X1)                                0.17       5.88 f
+  cb6/ra/fa1/cout (FullAdder_107)                         0.00       5.88 f
+  cb6/ra/fa2/cin (FullAdder_106)                          0.00       5.88 f
+  cb6/ra/fa2/U2/Q (AO22X1)                                0.17       6.05 f
+  cb6/ra/fa2/cout (FullAdder_106)                         0.00       6.05 f
+  cb6/ra/fa3/cin (FullAdder_105)                          0.00       6.05 f
+  cb6/ra/fa3/U1/Q (XOR2X1)                                0.24       6.29 f
+  cb6/ra/fa3/sum (FullAdder_105)                          0.00       6.29 f
+  cb6/ra/sum[3] (RippleAdderFourBits_3)                   0.00       6.29 f
+  cb6/sum[3] (CarryBypassFourBitsAdder_3)                 0.00       6.29 f
+  sum[23] (out)                                           0.22       6.51 f
+  data arrival time                                                  6.51
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -6.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.99
+
+
+1

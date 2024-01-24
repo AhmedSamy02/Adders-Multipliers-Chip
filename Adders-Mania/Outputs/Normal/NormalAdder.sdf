@@ -1,0 +1,620 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : NormalAdder
+Version: U-2022.12-SP7
+Date   : Tue Dec 12 13:10:38 2023
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ_ht
+Wire Load Model Mode: enclosed
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[31] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/CO (FADDX1)                                 0.33       9.80 r
+  add_7/U1_27/CO (FADDX1)                                 0.33      10.13 r
+  add_7/U1_28/CO (FADDX1)                                 0.33      10.46 r
+  add_7/U1_29/CO (FADDX1)                                 0.33      10.80 r
+  add_7/U1_30/CO (FADDX1)                                 0.33      11.13 r
+  add_7/U1_31/S (FADDX1)                                  0.38      11.51 f
+  add_7/SUM[31] (NormalAdder_DW01_add_0)                  0.00      11.51 f
+  sum[31] (out)                                           0.22      11.73 f
+  data arrival time                                                 11.73
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -11.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.77
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[30] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/CO (FADDX1)                                 0.33       9.80 r
+  add_7/U1_27/CO (FADDX1)                                 0.33      10.13 r
+  add_7/U1_28/CO (FADDX1)                                 0.33      10.46 r
+  add_7/U1_29/CO (FADDX1)                                 0.33      10.80 r
+  add_7/U1_30/S (FADDX1)                                  0.38      11.18 f
+  add_7/SUM[30] (NormalAdder_DW01_add_0)                  0.00      11.18 f
+  sum[30] (out)                                           0.22      11.40 f
+  data arrival time                                                 11.40
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -11.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.10
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[29] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/CO (FADDX1)                                 0.33       9.80 r
+  add_7/U1_27/CO (FADDX1)                                 0.33      10.13 r
+  add_7/U1_28/CO (FADDX1)                                 0.33      10.46 r
+  add_7/U1_29/S (FADDX1)                                  0.38      10.85 f
+  add_7/SUM[29] (NormalAdder_DW01_add_0)                  0.00      10.85 f
+  sum[29] (out)                                           0.22      11.07 f
+  data arrival time                                                 11.07
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -11.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.43
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[28] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/CO (FADDX1)                                 0.33       9.80 r
+  add_7/U1_27/CO (FADDX1)                                 0.33      10.13 r
+  add_7/U1_28/S (FADDX1)                                  0.38      10.51 f
+  add_7/SUM[28] (NormalAdder_DW01_add_0)                  0.00      10.51 f
+  sum[28] (out)                                           0.22      10.73 f
+  data arrival time                                                 10.73
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -10.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.77
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[27] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/CO (FADDX1)                                 0.33       9.80 r
+  add_7/U1_27/S (FADDX1)                                  0.38      10.18 f
+  add_7/SUM[27] (NormalAdder_DW01_add_0)                  0.00      10.18 f
+  sum[27] (out)                                           0.22      10.40 f
+  data arrival time                                                 10.40
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -10.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.10
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[26] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/CO (FADDX1)                                 0.33       9.47 r
+  add_7/U1_26/S (FADDX1)                                  0.38       9.85 f
+  add_7/SUM[26] (NormalAdder_DW01_add_0)                  0.00       9.85 f
+  sum[26] (out)                                           0.22      10.07 f
+  data arrival time                                                 10.07
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                -10.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.43
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[25] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/CO (FADDX1)                                 0.33       9.13 r
+  add_7/U1_25/S (FADDX1)                                  0.38       9.52 f
+  add_7/SUM[25] (NormalAdder_DW01_add_0)                  0.00       9.52 f
+  sum[25] (out)                                           0.22       9.73 f
+  data arrival time                                                  9.73
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -9.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.77
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[24] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/CO (FADDX1)                                 0.33       8.80 r
+  add_7/U1_24/S (FADDX1)                                  0.38       9.18 f
+  add_7/SUM[24] (NormalAdder_DW01_add_0)                  0.00       9.18 f
+  sum[24] (out)                                           0.22       9.40 f
+  data arrival time                                                  9.40
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -9.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.10
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[23] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/CO (FADDX1)                                 0.33       8.47 r
+  add_7/U1_23/S (FADDX1)                                  0.38       8.85 f
+  add_7/SUM[23] (NormalAdder_DW01_add_0)                  0.00       8.85 f
+  sum[23] (out)                                           0.22       9.07 f
+  data arrival time                                                  9.07
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -9.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.43
+
+
+  Startpoint: a[0] (input port clocked by vsysclk)
+  Endpoint: sum[22] (output port clocked by vsysclk)
+  Path Group: vsysclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  NormalAdder        8000                  saed90nm_typ_ht
+  NormalAdder_DW01_add_0
+                     8000                  saed90nm_typ_ht
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vsysclk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  a[0] (in)                                               0.00       1.00 r
+  add_7/A[0] (NormalAdder_DW01_add_0)                     0.00       1.00 r
+  add_7/U1/Q (AND2X1)                                     0.14       1.14 r
+  add_7/U1_1/CO (FADDX1)                                  0.33       1.47 r
+  add_7/U1_2/CO (FADDX1)                                  0.33       1.81 r
+  add_7/U1_3/CO (FADDX1)                                  0.33       2.14 r
+  add_7/U1_4/CO (FADDX1)                                  0.33       2.47 r
+  add_7/U1_5/CO (FADDX1)                                  0.33       2.80 r
+  add_7/U1_6/CO (FADDX1)                                  0.33       3.14 r
+  add_7/U1_7/CO (FADDX1)                                  0.33       3.47 r
+  add_7/U1_8/CO (FADDX1)                                  0.33       3.80 r
+  add_7/U1_9/CO (FADDX1)                                  0.33       4.14 r
+  add_7/U1_10/CO (FADDX1)                                 0.33       4.47 r
+  add_7/U1_11/CO (FADDX1)                                 0.33       4.80 r
+  add_7/U1_12/CO (FADDX1)                                 0.33       5.14 r
+  add_7/U1_13/CO (FADDX1)                                 0.33       5.47 r
+  add_7/U1_14/CO (FADDX1)                                 0.33       5.80 r
+  add_7/U1_15/CO (FADDX1)                                 0.33       6.14 r
+  add_7/U1_16/CO (FADDX1)                                 0.33       6.47 r
+  add_7/U1_17/CO (FADDX1)                                 0.33       6.80 r
+  add_7/U1_18/CO (FADDX1)                                 0.33       7.13 r
+  add_7/U1_19/CO (FADDX1)                                 0.33       7.47 r
+  add_7/U1_20/CO (FADDX1)                                 0.33       7.80 r
+  add_7/U1_21/CO (FADDX1)                                 0.33       8.13 r
+  add_7/U1_22/S (FADDX1)                                  0.38       8.52 f
+  add_7/SUM[22] (NormalAdder_DW01_add_0)                  0.00       8.52 f
+  sum[22] (out)                                           0.22       8.74 f
+  data arrival time                                                  8.74
+
+  clock vsysclk (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  output external delay                                  -0.50      19.50
+  data required time                                                19.50
+  --------------------------------------------------------------------------
+  data required time                                                19.50
+  data arrival time                                                 -8.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                       10.76
+
+
+1

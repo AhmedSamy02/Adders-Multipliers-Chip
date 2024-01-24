@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : cell
+Design : sync_fpu
+Version: G-2012.06-SP2
+Date   : Fri Dec 29 01:36:13 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+fpua                      fpu                             2384.158017
+                                                                    h
+inputRegister             Register64bit                   341.810011
+                                                                    h, n
+outRegister               Register32bit                   171.038005
+                                                                    h, n
+overFlow_reg              DFF_X1          NangateOpenCellLibrary_ss0p95vn40c
+                                                          4.522000  n
+--------------------------------------------------------------------------------
+Total 4 cells                                             2901.528034
+1
